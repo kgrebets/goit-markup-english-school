@@ -137,6 +137,9 @@
 
   height: var(--link-size);
   width: var(--link-size);
+
+  transition: var(--fast-trns);
+  transition-property: background-color, color, border-color;
 }
 
 .hero-link:hover {
