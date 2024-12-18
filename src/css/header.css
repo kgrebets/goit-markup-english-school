@@ -1,44 +1,230 @@
 .header {
-  padding: 20px 0;
+  max-width: 375px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.header-container {
+  width: 100%;
+  padding: 20px;
+  flex-shrink: 0;
 }
 .nav {
   display: flex;
   justify-content: space-between;
 }
 .nav-logo {
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 700;
+  align-content: center;
+}
+
+.nav-logo-text span {
+  color: #4dc274;
+}
+
+.nav-items {
+  background-color: #4dc274;
+  width: 240px;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-list {
+  margin-top: 196px;
   display: inline-flex;
+  flex-direction: column;
   align-items: center;
+  gap: 20px;
+}
+.nav-list a {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+}
+.nav-list a:hover {
+  color: #121417;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
   justify-content: center;
 }
-.nav-list {
+.social-links svg {
   display: flex;
+  width: 26px;
+  height: 26px;
+  justify-content: center;
   align-items: center;
+  opacity: 0.8;
+  fill: #fff;
+}
+
+.social-links a {
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+  border-color: #4dc274;
+}
+
+.icon {
+  fill: #121417;
+}
+
+.overlay-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
   justify-content: flex-end;
-  gap: 40px;
+
+  /* transform: translateX(-100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.5s ease, opacity 0.5s ease, visibility 0.5s ease; */
 }
-.nav-link {
-  position: relative;
-  display: block;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  transition: 200ms ease-in;
+
+.overlay-menu.active {
+  display: flex;
+  /* transform: translateX(0);
+  opacity: 1;
+  visibility: visible; */
 }
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+
+.burger-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  stroke: black;
 }
-.nav-link::after {
-  content: '';
+
+.close-menu {
+  background: none;
+  border: none;
+  color: white;
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(100%);
-  width: 110%;
-  height: 4px;
-  border-radius: 4px;
-  transform-origin: center;
-  animation: stretch 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms both;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
 }
-.nav-link.active::after {
-  background: #747bff;
+.burger-menu {
+  display: block;
+}
+
+.nav-list {
+  display: none;
+}
+
+.overlay-menu.active .nav-list {
+  display: flex;
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .header {
+    max-width: 768px;
+  }
+
+  .nav-items {
+    width: 384px;
+  }
+  .close-menu svg {
+    width: 40px;
+    height: 40px;
+  }
+  .social-links svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header {
+    max-width: 1280px;
+
+    display: flex;
+    align-items: center;
+  }
+  .header-container {
+    padding: 20px 128px;
+    justify-content: space-between;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    color: #121417;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+  }
+  .burger-menu {
+    display: none;
+  }
+
+  .nav-list {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 170px;
+  }
+
+  .nav-list a {
+    color: #121417;
+  }
+
+  .nav-list a:hover {
+    color: #4dc274;
+  }
+
+  .social-links svg {
+    fill: #121417;
+  }
+
+  .social-links a {
+    border: 1px solid rgba(18, 20, 23, 0.1);
+  }
+
+  .social-links a:hover {
+    transform: scale(1.1);
+    border: 1px solid rgba(77, 194, 116, 0.1);
+  }
+
+  .social-links svg:hover {
+    fill: #4dc274;
+  }
 }
