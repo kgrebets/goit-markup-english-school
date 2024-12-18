@@ -19,6 +19,8 @@
 
   /* Transitions */
   --fast-trns: 300ms ease;
+
+  scroll-behavior: smooth;
 }
 
 body {
