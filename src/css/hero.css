@@ -27,7 +27,7 @@
   }
 }
 
-@media screen and (min-width: 704px) {
+@media only screen and (min-width: 768px) {
   .hero-container {
     background-image: linear-gradient(96deg,
         rgba(0, 0, 0, 0.40) 36.36%,
@@ -49,14 +49,14 @@
   }
 }
 
-@media screen and (min-width: 1152px) {
+@media only screen and (min-width: 1200px) {
   .hero-container {
     background-image: linear-gradient(96deg,
         rgba(0, 0, 0, 0.40) 36.36%,
         rgba(0, 0, 0, 0.00) 51.43%),
       url(../img/hero_bg_desk@1x.jpg);
 
-    padding: 164px 524px 0 64px;
+    padding: 164px 425px 0 64px;
     min-height: 629px;
   }
 
@@ -75,22 +75,17 @@
   font-weight: var(--weight-semibold);
   color: var(--cl-white);
   line-height: 1.05;
-  margin-bottom: 40px;
+  margin: 0 20px 40px 20px;
 }
 
-@media screen and (min-width: 704px) {
+@media only screen and (min-width: 768px) {
   .hero-header {
     font-size: 60px;
     line-height: 1.17;
-    margin-bottom: 32px;
+    margin: 0 0 32px 0;
   }
 }
 
-@media screen and (min-width: 1152px) {
-  .hero-header {
-    margin-bottom: 32px;
-  }
-}
 
 .hero-header-accent {
   color: var(--cl-light-green-accent);
@@ -99,12 +94,14 @@
 .hero-button {
   display: block;
   margin: 0 auto;
+  min-width: 295px;
 }
 
-@media screen and (min-width: 704px) {
+@media only screen and (min-width: 768px) {
   .hero-button {
     display: inline-block;
     margin: 0;
+    min-width: 306px;
   }
 }
 
@@ -116,7 +113,7 @@
   bottom: var(--link-padding);
 }
 
-@media screen and (min-width: 704px) {
+@media only screen and (min-width: 768px) {
   .hero-link-container {
     --link-padding: 32px;
   }
@@ -147,7 +144,7 @@
   color: var(--cl-white);
 }
 
-@media screen and (min-width: 704px) {
+@media only screen and (min-width: 768px) {
   .hero-link {
     --link-size: 48px;
   }
