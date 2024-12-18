@@ -39,17 +39,8 @@
 }
 
 body {
-  font-family: var(--font-family);
-  font-style: normal;
-  font-optical-sizing: auto;
-
-  min-width: 320px;
-}
-
-body {
   color: var(--cl-dark);
   font-family: var(--font-family);
-  font-optical-sizing: auto;
   font-size: var(--font-size-base);
   font-style: normal;
   line-height: var(--line-height-base);
