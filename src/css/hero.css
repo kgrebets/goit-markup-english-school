@@ -130,12 +130,18 @@
   justify-content: center;
 
   background: var(--cl-white);
+
+  color: var(--cl-dark-green);
+
+  border-radius: 50%;
+
   height: var(--link-size);
   width: var(--link-size);
+}
 
-  fill: var(--cl-dark-green);
-  background: var(--cl-white);
-  border-radius: 50%;
+.hero-link:hover {
+  background: var(--cl-dark-green);
+  color: var(--cl-white);
 }
 
 @media screen and (min-width: 704px) {
