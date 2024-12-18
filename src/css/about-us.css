@@ -1,39 +1,99 @@
 .about-us {
+  padding-top: 0;
 }
 
-.about-us .heading {
+.about-us .about-us-title,
+.about-us .about-us-subtitle {
   text-align: center;
 }
 
-.about-us .h1 {
-  text-align: center;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 36px;
-  margin-bottom: 16px;
-}
-
-.about-us .text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  min-width: 334px;
-  padding: 0 0.5px;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-rows: repeat(5, 1fr);
+.about-us .grid-container {
+  list-style: none;
+  margin-top: 40px;
+  display: flex;
   gap: 20px;
-  min-width: 335px;
+  padding: 0;
   border: none;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-.grid-item {
+.about-us .grid-item {
   background-color: var(--cl-grey);
   border-radius: 16px;
   border: none;
-  height: 160px;
-  text-align: center;
-  padding: 20px;
+  text-align: left;
+  padding: 32px;
+  width: 100%;
+}
+
+.about-us .grid-item-img {
+  display: flex;
+  justify-content: center;
+  background-color: var(--cl-dark-green);
+  padding: 50px 40px;
+  align-items: center;
+}
+
+.about-us .grid-item-img img {
+  max-width: 254px;
+  width: 100%;
+  height: auto;
+}
+
+.about-us .grid-item-num {
+  font-size: var(--indent-7);
+  color: var(--cl-dark-green);
+  font-weight: var(--weight-bold);
+  line-height: 32px;
+  margin-bottom: 16px;
+}
+
+.about-us .grid-item-text {
+  font-size: var(--indent-5);
+  color: var(--cl-dark);
+  font-weight: var(--weight-bold);
+  line-height: 24px;
+}
+
+@media (min-width: 768px) {
+  .about-us .grid-container {
+    flex-direction: row;
+  }
+
+  .about-us .about-us-subtitle {
+    font-size: var(--indent-4);
+    max-width: 595px;
+    margin: 0 auto;
+  }
+
+  .about-us .grid-item {
+    flex: 1 0 48%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-us .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+  }
+
+  .about-us .grid-item:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .about-us .grid-item:nth-child(2) {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .about-us .grid-item:nth-child(3) {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .about-us .grid-item:nth-child(4) {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .about-us .grid-item:nth-child(5) {
+    grid-area: 1 / 3 / 3 / 4;
+  }
 }
