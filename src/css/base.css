@@ -46,75 +46,6 @@ body {
   min-width: 320px;
 }
 
-.font-regular {
-  font-weight: var(--weight-regular);
-}
-
-.font-bold {
-  font-weight: var(--weight-bold);
-}
-
-.font-semibold {
-  font-weight: var(--weight-semibold);
-}
-
-.btn {
-  background: var(--cl-dark-green);
-
-  border: 1px solid transparent;
-  border-radius: 12px;
-
-  font-size: 14px;
-  font-weight: var(--weight-bold);
-
-  color: var(--cl-white);
-
-  min-width: 120px;
-  min-height: 24px;
-  padding: 14px 76px;
-
-  transition: var(--fast-trns);
-  transition-property: background-color, color, border-color;
-}
-
-.btn:hover,
-.btn:active {
-  background: var(--cl-dark-green-hover);
-}
-
-/*:root {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-width: 100vw;
-  min-height: 100vh;
-  margin: 0;
-}
-
-main {
-  flex-grow: 1;
-}
-main:has(.back-link) {
-  text-align: center;
-}
-*/
-
 body {
   color: var(--cl-dark);
   font-family: var(--font-family);
@@ -134,8 +65,8 @@ section {
   padding-top: calc(var(--indent-10) * 2);
 }
 
-section > h2,
-section > p {
+section>h2,
+section>p {
   text-align: center;
 }
 
@@ -202,8 +133,9 @@ button {
 }
 
 @media only screen and (max-width: 767px) {
-  section > h2,
-  section > p {
+
+  section>h2,
+  section>p {
     padding-inline: var(--indent-5);
   }
 }
