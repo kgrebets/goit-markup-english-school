@@ -2,6 +2,16 @@
     <div class="hero-container container">
         <h1 class="hero-header">Discover the joy of learning <span class="hero-header-accent">English</span> with us!
         </h1>
-        <button class="btn hero-button" type="button">Leave an application</button>
+
+        <button class="btn hero-button" type="button" onclick="document.getElementById('hero-link').click()">Leave an application</button>
+
+        <div class="hero-link-container">
+            <a id="hero-link" class="hero-link" href="#application">
+                <svg width="16" height="16">
+                    <use href="./img/sprite.svg#icon-arrow"></use>
+                </svg>
+            </a>
+        </div>
+
     </div>
 </section>
