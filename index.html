@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css">
 
   <script type="module" crossorigin src="/goit-markup-english-school/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/goit-markup-english-school/assets/styles-B1Sd1_BZ.css">
+  <link rel="stylesheet" crossorigin href="/goit-markup-english-school/assets/styles-B-fqzyvB.css">
 </head>
 
 <body>
@@ -42,16 +42,28 @@
 1
   <main>
     <section class="hero">
-    <div class="container">
-        <h1 class="hero-header">Discover the joy of learning English with us!</h1>
-        <button type="button" class="hero-button">Leave an application</button>
+    <div class="hero-container container">
+        <h1 class="hero-header">Discover the joy of learning <span class="hero-header-accent">English</span> with us!
+        </h1>
+
+        <button class="btn hero-button" type="button" onclick="document.getElementById('hero-link').click()">Leave an
+            application</button>
+
+        <div class="hero-link-container">
+            <a id="hero-link" class="hero-link" href="#leave-an-application">
+                <svg width="16" height="16">
+                    <use href="/goit-markup-english-school/assets/sprite-CTdvRum6.svg#icon-arrow"></use>
+                </svg>
+            </a>
+        </div>
+
     </div>
 </section>
     3
     4
     5
     6
-    <section class="leave-an-application">
+    <section id="leave-an-application" class="leave-an-application">
   <h2>Leave an <span class="title-subtext-background">application</span></h2>
   <p class="subtitle">Please use the form below to contact us. Enter your name, email, and message and we'll get back to
     you shortly.</p>
