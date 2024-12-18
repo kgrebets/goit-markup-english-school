@@ -1,0 +1,39 @@
+.about-us {
+}
+
+.about-us .heading {
+  text-align: center;
+}
+
+.about-us .h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  margin-bottom: 16px;
+}
+
+.about-us .text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  min-width: 334px;
+  padding: 0 0.5px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 20px;
+  min-width: 335px;
+  border: none;
+}
+
+.grid-item {
+  background-color: var(--cl-grey);
+  border-radius: 16px;
+  border: none;
+  height: 160px;
+  text-align: center;
+  padding: 20px;
+}
