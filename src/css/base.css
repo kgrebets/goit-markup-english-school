@@ -100,14 +100,6 @@ h2 {
   line-height: 1.6;
 }
 
-@media only screen and (max-width: 767px) {
-  .subtitle {
-    font-size: 14px;
-    line-height: 24px;
-    margin-bottom: var(--indent-5);
-  }
-}
-
 button {
   background-color: var(--cl-dark-green);
   border-radius: 12px;
@@ -126,6 +118,12 @@ button {
   section > h2,
   section > p {
     padding-inline: var(--indent-5);
+  }
+
+  .subtitle {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: var(--indent-5);
   }
 }
 
