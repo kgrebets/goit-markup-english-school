@@ -1,7 +1,13 @@
+.hide {
+  display: none;
+}
+
 :root {
   --cl-dark: #121417;
   --cl-dark-green: #4DC274;
+  --cl-dark-green-hover: #38AE5F;
   --cl-light-green: #D4FDE1;
+  --cl-light-green-accent: #BEE8CC;
   --cl-grey: #F3F5F6;
   --cl-white: #FFFFFF;
 
@@ -10,6 +16,9 @@
   --weight-regular: 400;
   --weight-semibold: 600;
   --weight-bold: 700;
+
+  /* Transitions */
+  --fast-trns: 300ms ease;
 }
 
 body {
@@ -30,6 +39,30 @@ body {
 
 .font-semibold {
   font-weight: var(--weight-semibold);
+}
+
+.btn {
+  background: var(--cl-dark-green);
+
+  border: 1px solid transparent;
+  border-radius: 12px;
+
+  font-size: 14px;
+  font-weight: var(--weight-bold);
+
+  color: var(--cl-white);
+
+  min-width: 120px;
+  min-height: 24px;
+  padding: 14px 76px;
+
+  transition: var(--fast-trns);
+  transition-property: background-color, color, border-color;
+}
+
+.btn:hover,
+.btn:active {
+  background: var(--cl-dark-green-hover);
 }
 
 /*:root {
