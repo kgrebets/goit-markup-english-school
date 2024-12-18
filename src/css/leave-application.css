@@ -111,6 +111,11 @@
     flex-direction: column;
   }
 
+  .leave-an-application .subtitle {
+    max-width: 375px;
+    margin: 0 auto var(--indent-5);
+  }
+
   .notice {
     font-size: 12px;
     line-height: 1.3;
