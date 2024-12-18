@@ -34,6 +34,8 @@
   /* Transitions */
   --base-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --fast-trns: 300ms ease;
+
+  scroll-behavior: smooth;
 }
 
 body {
