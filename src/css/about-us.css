@@ -1,3 +1,9 @@
+/*
+  //
+  // Common
+  // _____________________________
+ */
+
 .about-us .about-us-title,
 .about-us .about-us-subtitle {
   text-align: center;
@@ -49,6 +55,12 @@
   line-height: 1.2;
 }
 
+/*
+  //
+  // Tablet
+  // _____________________________
+ */
+
 @media (min-width: 768px) {
   h2 {
     font-size: 40px;
@@ -73,6 +85,12 @@
     border-radius: 30px;
   }
 }
+
+/*
+  //
+  // Desktop
+  // _____________________________
+ */
 
 @media (min-width: 1200px) {
   .about-us .grid-container {
