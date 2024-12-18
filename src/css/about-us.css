@@ -1,18 +1,12 @@
-.about-us {
-  padding-top: 0;
-}
-
 .about-us .about-us-title,
 .about-us .about-us-subtitle {
   text-align: center;
 }
 
 .about-us .grid-container {
-  list-style: none;
-  margin-top: 40px;
+  margin-top: var(--indent-10);
   display: flex;
-  gap: 20px;
-  padding: 0;
+  gap: var(--indent-5);
   border: none;
   flex-direction: column;
   flex-wrap: wrap;
@@ -23,7 +17,7 @@
   border-radius: 16px;
   border: none;
   text-align: left;
-  padding: 32px;
+  padding: var(--indent-8);
   width: 100%;
 }
 
@@ -31,7 +25,6 @@
   display: flex;
   justify-content: center;
   background-color: var(--cl-dark-green);
-  padding: 50px 40px;
   align-items: center;
 }
 
@@ -42,33 +35,42 @@
 }
 
 .about-us .grid-item-num {
-  font-size: var(--indent-7);
+  font-size: 28px;
   color: var(--cl-dark-green);
   font-weight: var(--weight-bold);
   line-height: 32px;
-  margin-bottom: 16px;
+  margin-bottom: var(--indent-4);
 }
 
 .about-us .grid-item-text {
-  font-size: var(--indent-5);
+  font-size: 20px;
   color: var(--cl-dark);
   font-weight: var(--weight-bold);
   line-height: 24px;
 }
 
 @media (min-width: 768px) {
+  h2 {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: var(--indent-6);
+  }
+
   .about-us .grid-container {
     flex-direction: row;
+    margin-top: 64px;
+    gap: var(--indent-8);
   }
 
   .about-us .about-us-subtitle {
-    font-size: var(--indent-4);
+    font-size: 16px;
     max-width: 595px;
     margin: 0 auto;
   }
 
   .about-us .grid-item {
-    flex: 1 0 48%;
+    flex: 1 0 40%;
+    border-radius: 30px;
   }
 }
 
@@ -77,8 +79,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 32px;
-    grid-row-gap: 32px;
+    grid-column-gap: var(--indent-8);
+    grid-row-gap: var(--indent-8);
   }
 
   .about-us .grid-item:nth-child(1) {
