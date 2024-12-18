@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Pull requests list, as described:
+# https://youtu.be/DzDv5C5ITPQ?si=0Oy_NWKnJ_L3R_2_&t=44
+pullrequests-list.txt
