@@ -18,7 +18,7 @@
   --cl-hover-primary: #38AE5F;
   --cl-light-green-secondary: #BEE8CC;
   --font-size-base: 14px;
-  --line-height-base: 1.7;
+  --line-height-base: 1.71429;
   --indent-1: 4px;
   --indent-2: 8px;
   --indent-3: 12px;
@@ -31,6 +31,8 @@
   --indent-10: 40px;
   --indent-11: 44px;
   --indent-12: 48px;
+  --indent-16: 64px;
+  --indent-32: 128px;
   /* Transitions */
   --base-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --fast-trns: 300ms ease;
@@ -51,23 +53,21 @@ p {
   color: rgba(var(--cl-dark-rgb), 0.5);
 }
 
-section {
-  padding-bottom: calc(var(--indent-10) * 2);
-  padding-top: calc(var(--indent-10) * 2);
-}
-
-section>h2,
-section>p {
-  text-align: center;
-}
-
 h2 {
   color: var(--cl-dark);
   font-size: 32px;
   font-weight: var(--weight-bold);
   letter-spacing: -0.02em;
   line-height: 1.125;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 40px;
+    line-height: 1.2;
+  }
 }
 
 .title-subtext-background {
@@ -99,13 +99,14 @@ h2 {
   font-size: 18px;
   font-weight: var(--weight-regular);
   line-height: 1.6;
+  margin-bottom: var(--indent-16);
 }
 
 @media only screen and (max-width: 767px) {
   .subtitle {
     font-size: 14px;
-    line-height: 24px;
-    margin-bottom: var(--indent-5);
+    line-height: 1.71428;
+    margin-bottom: var(--indent-10);
   }
 }
 
@@ -121,14 +122,6 @@ button {
   line-height: 1.7;
   min-width: 256px;
   padding: 0;
-}
-
-@media only screen and (max-width: 767px) {
-
-  section>h2,
-  section>p {
-    padding-inline: var(--indent-5);
-  }
 }
 
 @media only screen and (min-width: 768px) {
