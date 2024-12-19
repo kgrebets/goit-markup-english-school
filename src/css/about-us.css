@@ -4,11 +4,6 @@
   // _____________________________
  */
 
-.about-us .about-us-title,
-.about-us .about-us-subtitle {
-  text-align: center;
-}
-
 .about-us .grid-container {
   margin-top: var(--indent-10);
   display: flex;
@@ -65,7 +60,10 @@
   h2 {
     font-size: 40px;
     line-height: 1.2;
-    margin-bottom: var(--indent-6);
+  }
+
+  .about-us .subtitle {
+    padding: 0 23px;
   }
 
   .about-us .grid-container {
@@ -74,14 +72,8 @@
     gap: var(--indent-8);
   }
 
-  .about-us .about-us-subtitle {
-    font-size: 16px;
-    max-width: 595px;
-    margin: 0 auto;
-  }
-
   .about-us .grid-item {
-    flex: 1 0 40%;
+    flex: 1 0 39%;
     border-radius: 30px;
   }
 }
@@ -92,7 +84,11 @@
   // _____________________________
  */
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
+  .about-us .subtitle {
+    padding: 0 183px;
+  }
+
   .about-us .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
