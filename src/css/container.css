@@ -1,9 +1,8 @@
 .container {
   min-width: 320px;
   max-width: 375px;
-  margin: 0 auto;
+  margin: 0 auto 80px;
   padding: 0 var(--indent-5);
-  margin-bottom: 80px;
 }
 
 /* Styles for Tablet devices */
@@ -21,7 +20,6 @@
     max-width: 1280px;
     padding-inline: var(--indent-32);
     margin-bottom: 150px;
-
   }
 }
 
