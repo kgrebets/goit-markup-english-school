@@ -1,0 +1,286 @@
+/* Common */
+body {
+  font-family: 'Manrope', sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.students-say {
+  padding: 150px 0 150px;
+}
+
+.container-student {
+  width: 1024px;
+  margin: 0 128px;
+}
+
+.banner-region {
+  width: 832px;
+}
+
+.rectangle {
+  width: 169px;
+  height: 20px;
+  margin-left: 480px;
+  margin-top: -16px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  background-color: #bee8cc;
+}
+
+.banner-students {
+  margin-left: 290px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.subscribe-banner {
+  width: 647px;
+  margin-left: 186px;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.65;
+}
+
+.students-list {
+  display: flex;
+  margin-top: 65px;
+  gap: 32px;
+}
+
+.student {
+  flex-basis: calc((100% - 2 * 32px) / 3);
+  border-radius: 30px;
+  color: rgba(18, 20, 23, 0.5);
+  background-color: #f3f5f6;
+}
+
+.student-image-title {
+  display: flex;
+  width: 288px;
+  height: 78px;
+  margin-left: 16px;
+  margin-top: 32px;
+  padding-top: 14px;
+  border-radius: 15px;
+  background-color: #4dc274;
+}
+
+.student-image-title img {
+  margin-left: 16px;
+  border-radius: 50%;
+}
+
+.student-image-title div {
+  padding-left: 8px;
+}
+
+.student-image-title .student-name {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.student-title {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.student-item {
+  height: 144px;
+  margin: 32px 32px 40px 32px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(18, 20, 23, 0.5);
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  .students-say {
+    padding: 80px 0 80px;
+  }
+
+  .container-student {
+    max-width: 335px;
+    margin: 0 16px;
+  }
+
+  .banner-region {
+    max-width: 335px;
+  }
+
+  .rectangle {
+    max-width: 135px;
+    height: 12px;
+    margin-left: 186px;
+    margin-top: -48px;
+  }
+
+  .banner-students {
+    max-width: 335px;
+    margin-left: 10px;
+    font-size: 32px;
+    line-height: 1.12;
+    text-align: center;
+  }
+
+  .subscribe-banner {
+    max-width: 335px;
+    margin-left: 0px;
+    padding-top: 40px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.72;
+  }
+
+  .students-list {
+    display: block;
+    margin: 0;
+    margin-top: 40px;
+  }
+
+  .students-list li:nth-child(n + 2) {
+    display: none;
+  }
+
+  .student {
+    margin: 0;
+    padding-top: 20px;
+    max-height: 278px;
+    border-radius: 16px;
+  }
+
+  .student-image-title {
+    margin: 0 20px;
+    max-width: 295px;
+    border-radius: 8px;
+  }
+
+  .student-item {
+    max-width: 267px;
+    height: 120px;
+    font-size: 14px;
+    list-style: 1.72;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .students-say {
+    padding: 100px 0 100px;
+  }
+
+  .container-student {
+    max-width: 704px;
+    margin: 0 16px;
+  }
+
+  .banner-region {
+    max-width: 704px;
+  }
+
+  .rectangle {
+    margin-left: 340px;
+  }
+
+  .banner-students {
+    margin-left: 150px;
+  }
+
+  .subscribe-banner {
+    margin-left: 36px;
+  }
+
+  .students-list {
+    gap: 32px;
+  }
+
+  .student {
+    flex-basis: calc((100% - 1 * 32px) / 2);
+  }
+
+  .students-list li:last-child {
+    display: none;
+  }
+
+  .students-list li .student-item {
+    font-size: 16px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1200px) {
+  .students-say {
+    padding: 150px 0 150px;
+  }
+
+  .students-list {
+    display: flex;
+  }
+
+  .students-list li:last-child {
+    display: list-item;
+  }
+
+  .container-student {
+    min-width: 1024px;
+    margin: 0 128px;
+  }
+
+  .banner-region {
+    min-width: 832px;
+  }
+
+  .rectangle {
+    min-width: 169px;
+    max-height: 20px;
+  }
+
+  .subscribe-banner {
+    min-width: 647px;
+    margin-left: 186px;
+  }
+
+  .students-list {
+    display: flex;
+    gap: 32px;
+  }
+
+  .student {
+    flex-basis: calc((100% - 2 * 32px) / 3);
+    border-radius: 30px;
+  }
+
+  .student-image-title {
+    display: flex;
+    min-width: 288px;
+    max-height: 78px;
+    border-radius: 15px;
+  }
+}
