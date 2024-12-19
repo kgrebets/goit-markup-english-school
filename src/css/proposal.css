@@ -1,0 +1,261 @@
+.english-package {
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid red;
+}
+
+.english-package-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 20px 64px 20px;
+    border-radius: 16px;
+    background: linear-gradient(80deg,
+            #4dc274 0%,
+            #bee8cc 100%);
+    overflow: hidden;
+}
+
+.english-package-heading {
+    color: #ffffff;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.05;
+    margin-bottom: 65px;
+}
+
+.highlighted-text {
+    color: #bee8cc;
+}
+
+.english-package-content-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.english-package-card {
+    border-radius: 16px;
+    background: #ffffff;
+    padding: 40px 20px;
+}
+
+.english-package-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    transform: rotate(11deg);
+    background: #ffffff;
+    opacity: 50%;
+    z-index: -1;
+}
+
+.english-package-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    transform: rotate(-9deg);
+    background: #d4fde1;
+    ;
+    z-index: -1;
+}
+
+.english-package-card-title {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+}
+
+.english-package-benefits-list {
+    margin-bottom: 20px;
+}
+
+.english-package-benefit-item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.english-package-benefit-item {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.43;
+    letter-spacing: -0.02em;
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+}
+
+.english-package-benefit-item::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    background-color: #4dc274;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-image: url(../img/proposal/check.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 12px;
+}
+
+.cta-button {
+    border-radius: 12px;
+    background-color: #4dc274;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.71;
+    display: flex;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cta-button:hover,
+.cta-button:focus {
+    background-color: #38ae5f;
+}
+
+@media screen and (min-width: 768px) {
+    .english-package {
+        /* min-width: 704px; */
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .english-package-container {
+        /* min-width: 704px;
+        max-width: 704px; */
+        padding: 64px 18px 92px 18px;
+        border-radius: 30px;
+    }
+
+    .english-package-heading {
+        font-size: 60px;
+        line-height: 1.17;
+        padding-left: 14px;
+        margin-bottom: 84px;
+    }
+
+    .english-package-card {
+        border-radius: 30px;
+        padding: 64px 32px;
+        background-image: url(../img/proposal/the-books.png);
+        background-position: 503px 173px;
+        background-size: 214px 263px;
+        background-repeat: no-repeat;
+    }
+
+    .english-package-card::before {
+        border-radius: 30px;
+        transform: rotate(10.655deg) translateY(6px);
+    }
+
+    .english-package-card::after {
+        border-radius: 30px;
+        transform: rotate(-9.864deg) translateY(2px);
+    }
+
+    .english-package-card-title {
+        font-size: 40px;
+        letter-spacing: -0.02em;
+        margin-bottom: 32px;
+    }
+
+    .english-package-benefits-list {
+        margin-bottom: 32px;
+    }
+
+    .english-package-benefit-item {
+        width: 448px;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        column-gap: 16px;
+    }
+
+    .english-package-benefit-item::before {
+        width: 28px;
+        height: 28px;
+        padding: 4px;
+        background-size: 20px;
+    }
+
+    .cta-button {
+        display: inline-flex;
+        padding: 16px 64px;
+        font-size: 18px;
+        line-height: 1.56;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi),
+screen and (min-width: 768px) and (min-resolution: 2dppx),
+screen and (min-width: 768px) and (min-device-pixel-ratio: 2) {
+    .english-package-card {
+        background-image: url(../img/proposal/the-books@2x.png);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .english-package {
+        min-width: 1152px;
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    .english-package-container {
+        min-width: 1152px;
+        padding: 64px 64px 141px 64px;
+    }
+
+    .english-package-heading {
+        max-width: 776px;
+        padding-left: 0;
+        margin-bottom: 133px;
+    }
+
+    .english-package-card {
+        padding-left: 64px;
+        padding-right: 64px;
+        background-position: 810px 128px;
+    }
+
+    .english-package-card::before {
+        border-radius: 30px;
+        transform: rotate(11deg) translate(5px, 46px);
+        width: 98.7%;
+        height: 85%;
+    }
+
+    .english-package-card::after {
+        border-radius: 30px;
+        transform: rotate(-8deg) translate(-24px, 10px);
+        width: 102.5%;
+        height: 98.3%;
+    }
+
+    .english-package-card-title {
+        margin-bottom: 40px;
+    }
+
+    .english-package-benefits-list {
+        margin-bottom: 39px;
+    }
+
+    .english-package-benefit-item {
+        width: 654px;
+    }
+}
