@@ -1,13 +1,7 @@
-.ourlessons {
-}
-
 .ourlessons-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.title-subtext-background {
 }
 
 .ourlessons-subtitle-wrapper {
