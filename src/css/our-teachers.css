@@ -1,7 +1,3 @@
-.our-teachers .subtitle {
-  color: rgba(var(--cl-dark-rgb), 0.5);
-}
-
 .our-teachers-list {
   display: grid;
   gap: var(--indent-8);
@@ -43,11 +39,6 @@
     gap: var(--indent-10);
   }
 
-  .our-teachers .subtitle {
-    max-width: 375px;
-    margin: 0 auto var(--indent-5);
-  }
-
   .our-teachers-card-description {
     font-size: 14px;
     line-height: 1.71;
@@ -59,31 +50,10 @@
   // Tablet
   // _____________________________
  */
-@media only screen and (min-width: 768px) {
-  .our-teachers h2 {
-    font-size: 40px;
-    line-height: 1.2;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  .our-teachers h2 {
-    font-size: 40px;
-    line-height: 1.2;
-  }
-
-  .our-teachers .container {
-    padding-inline: 0;
-  }
-
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
   .our-teachers-list {
     grid-template-columns: repeat(2, 1fr);
     padding: 0 64px;
-  }
-
-  .our-teachers .subtitle {
-    margin: 0 auto 64px;
-    max-width: 709px;
   }
 }
 
@@ -93,13 +63,8 @@
   // _____________________________
  */
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
   .our-teachers-list {
     grid-template-columns: repeat(4, 1fr);
-  }
-
-  .our-teachers .subtitle {
-    margin: 0 auto 64px;
-    max-width: 709px;
   }
 }
