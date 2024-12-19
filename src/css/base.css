@@ -95,10 +95,10 @@ h2 {
 }
 
 .subtitle {
-  color: rgba(var(--cl-dark-rgb), 0.8);
+  color: rgba(var(--cl-dark-rgb), 0.5);
   font-size: 18px;
   font-weight: var(--weight-regular);
-  line-height: 1.6;
+  line-height: 1.66667;
   margin-bottom: var(--indent-16);
   text-align: center;
 }
