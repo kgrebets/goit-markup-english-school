@@ -16,18 +16,6 @@
   }
 }
 
-.ourlessons-subtitle {
-  color: rgba(var(--cl-dark-rgb), 0.5);
-  text-align: center;
-}
-
-@media only screen and (min-width: 768px) {
-  .ourlessons-subtitle {
-    line-height: 1.66667;
-    max-width: 665px;
-  }
-}
-
 .ourlessons-list {
   display: flex;
   flex-direction: column;
