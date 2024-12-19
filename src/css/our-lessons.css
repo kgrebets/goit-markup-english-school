@@ -1,29 +1,5 @@
 .ourlessons {
 }
-/* #region Container fix — remove */
-
-/* .ourlessons-container.container {
-  outline: 2px solid red;
-  outline-offset: -2px;
-} */
-
-/* @media only screen and (min-width: 768px) {
-  .ourlessons-container.container {
-    max-width: 768px;
-    padding-left: var(--indent-8);
-    padding-right: var(--indent-8);
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .ourlessons-container.container {
-    max-width: 1280px;
-    padding-left: 128px;
-    padding-right: 128px;
-  }
-} */
-
-/* #endregion */
 
 .ourlessons-container {
   display: flex;
