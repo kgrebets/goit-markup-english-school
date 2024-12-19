@@ -7,7 +7,7 @@
   outline-offset: -2px;
 } */
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .ourlessons-container.container {
     max-width: 768px;
     padding-left: var(--indent-8);
@@ -21,7 +21,7 @@
     padding-left: 128px;
     padding-right: 128px;
   }
-}
+} */
 
 /* #endregion */
 
