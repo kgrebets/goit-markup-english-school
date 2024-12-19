@@ -100,6 +100,7 @@ h2 {
   font-weight: var(--weight-regular);
   line-height: 1.6;
   margin-bottom: var(--indent-16);
+  text-align: center;
 }
 
 @media only screen and (max-width: 767px) {
@@ -129,6 +130,10 @@ button {
     font-size: 18px;
     height: 60px;
     line-height: 1.5;
+  }
+
+  .title-subtext-background:hover:before {
+    height: 44px;
   }
 }
 
