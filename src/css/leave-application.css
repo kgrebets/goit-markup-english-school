@@ -14,7 +14,7 @@
   width: 100%;
 }
 
-.leave-an-application .container {
+.leave-an-application .section-items-wrapper {
   display: flex;
   gap: var(--indent-8);
   justify-content: center;
