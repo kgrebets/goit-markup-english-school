@@ -1,0 +1,70 @@
+.our-teachers-list {
+  display: grid;
+  gap: var(--indent-8);
+}
+
+.our-teachers-card {
+  text-align: center;
+}
+
+.our-teachers-card-avatar-image {
+  display: initial;
+  border-radius: 50%;
+  margin-bottom: var(--indent-4);
+}
+
+.our-teachers-card-name {
+  color: var(--cl-dark);
+  font-size: 20px;
+  font-weight: var(--weight-bold);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: var(--indent-2);
+}
+
+.our-teachers-card-description {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/*
+  //
+  // Mobile
+  // _____________________________
+ */
+
+@media only screen and (max-width: 767px) {
+  .our-teachers-list {
+    grid-template-columns: 1fr;
+    gap: var(--indent-10);
+  }
+
+  .our-teachers-card-description {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+/*
+  //
+  // Tablet
+  // _____________________________
+ */
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .our-teachers-list {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 64px;
+  }
+}
+
+/*
+  //
+  // Desktop
+  // _____________________________
+ */
+
+@media only screen and (min-width: 1280px) {
+  .our-teachers-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
