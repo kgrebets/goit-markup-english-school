@@ -18,12 +18,6 @@
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  .container {
-    padding-inline: var(--indent-8);
-  }
-}
-
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1200px) {
   .container {
