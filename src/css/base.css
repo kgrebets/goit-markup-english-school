@@ -5,18 +5,18 @@
 :root {
   --cl-dark: #121417;
   --cl-dark-rgb: 18, 20, 23;
-  --cl-dark-green: #4DC274;
-  --cl-dark-green-hover: #38AE5F;
-  --cl-light-green: #D4FDE1;
-  --cl-light-green-accent: #BEE8CC;
-  --cl-grey: #F3F5F6;
-  --cl-white: #FFFFFF;
-  --font-family: "Manrope", sans-serif;
+  --cl-dark-green: #4dc274;
+  --cl-dark-green-hover: #38ae5f;
+  --cl-light-green: #d4fde1;
+  --cl-light-green-accent: #bee8cc;
+  --cl-grey: #f3f5f6;
+  --cl-white: #ffffff;
+  --font-family: 'Manrope', sans-serif;
   --weight-regular: 400;
   --weight-semibold: 600;
   --weight-bold: 700;
-  --cl-hover-primary: #38AE5F;
-  --cl-light-green-secondary: #BEE8CC;
+  --cl-hover-primary: #38ae5f;
+  --cl-light-green-secondary: #bee8cc;
   --font-size-base: 14px;
   --line-height-base: 1.71429;
   --indent-1: 4px;
