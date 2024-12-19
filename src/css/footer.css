@@ -1,10 +1,10 @@
 
 .logo {
-  font-weight: 700;
+  font-weight: var(--weight-bold);
   font-size: 20px;
   line-height: 1.366;
   letter-spacing: 0.03em;
-  color: #fff;
+  color: var(--cl-white);
   display: inline-block;
   margin-bottom: 28px;
 }
@@ -17,11 +17,11 @@
 
 footer {
   background-color: var(--cl-dark);
-  color: #fff;
+  color: var(--cl-white);
 }
 
 footer p {
-  color: #fff;
+  color: var(--cl-white);
 }
 .footer-container {
   display: flex;
@@ -124,6 +124,10 @@ footer p {
   margin: 60px 0 23px;
 }
 
+footer .container {
+  margin-bottom: 00
+}
+
 @media (max-width: 768px) {
   .logo {
     margin-bottom: 16px;
@@ -175,15 +179,12 @@ footer p {
   }
 }
 
-@media screen and (min-width: 1158px) {
-  .footer-social-icons-list {
-    justify-content: left;
-    margin-bottom: 0;
-  }
-}
-
 @media screen and (min-width: 1280px) {
   .footer-container {
     padding-top: 64px;
+  }
+  .footer-social-icons-list {
+    justify-content: left;
+    margin-bottom: 0;
   }
 }
