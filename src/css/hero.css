@@ -16,14 +16,9 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
   border-radius: 16px;
-
   padding: 425px 20px 0 20px;
-
   min-height: 709px;
-  min-width: 320px;
-
   position: relative;
 }
 
@@ -161,4 +156,18 @@
 
 #hero-link {
   display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .hero-container {
+    padding: 0 20px 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .hero-button {
+    min-width: inherit;
+    width: 100%;
+  }
 }

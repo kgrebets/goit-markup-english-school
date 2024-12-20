@@ -14,7 +14,6 @@
   var(--cl-dark-green) 0%,
   var(--cl-light-green-accent) 100%);
   overflow: hidden;
-  max-width: 1152px;
 }
 
 .english-package-heading {
@@ -185,6 +184,7 @@
 @media screen and (min-width: 1280px) {
   .english-package-container {
     padding: var(--indent-16) var(--indent-16) 141px;
+    max-width: 1152px;
   }
 
   .english-package-heading {
