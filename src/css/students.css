@@ -1,0 +1,71 @@
+.students-say .intro-wrapper {
+  margin-bottom: var(--indent-10);
+}
+
+.students-list .student {
+  padding: var(--indent-5) var(--indent-5) var(--indent-10);
+  background-color: var(--cl-grey);
+  border-radius: 16px;
+  height: auto;
+}
+
+.students-list .student-image-title {
+  display: flex;
+  gap: var(--indent-2);
+  background-color: var(--cl-dark-green);
+  padding: var(--indent-4);
+  border-radius: 8px;
+  align-items: center;
+  margin-bottom: var(--indent-5);
+}
+
+.students-list .student-image {
+  border-radius: 50%;
+}
+
+.students-list .student-name {
+  color: var(--cl-white);
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.students-list .student-title {
+  color: rgba(var(--cl-white-rgb), .5);
+  font-size: 12px;
+  line-height: 1.3333;
+}
+
+.students-list .student-short-description {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.students-list .student-item {
+  padding-inline: var(--indent-3);
+}
+
+@media only screen and (min-width: 768px) {
+  .students-say .intro-wrapper {
+    margin-bottom: var(--indent-16);
+  }
+
+  .students-say .subtitle {
+    max-width: 647px;
+    margin: 0 auto;
+  }
+
+  .students-list .student {
+    padding: var(--indent-8) var(--indent-4) var(--indent-10);
+  }
+
+  .students-list .student-item {
+    font-size: 16px;
+    line-height: 1.5;
+    padding-inline: var(--indent-4);
+  }
+
+  .students-list .student-image-title {
+    margin-bottom: var(--indent-8);
+  }
+}
