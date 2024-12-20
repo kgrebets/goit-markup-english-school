@@ -1,54 +1,15 @@
-/* Common */
-body {
-  font-family: 'Manrope', sans-serif;
-  color: #434455;
-  background-color: #ffffff;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-ol,
-ul {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
-
-img {
-  display: block;
-}
-
-.students-say {
-  padding: 150px 0 150px;
-}
-
-.container-student {
-  width: 1024px;
-  margin: 0 128px;
-}
-
 .banner-region {
   width: 832px;
 }
 
 .rectangle {
   width: 169px;
-  height: 20px;
+  height: var(--indent-5);
   margin-left: 480px;
   margin-top: -16px;
-  margin-bottom: 12px;
-  border-radius: 8px;
-  background-color: #bee8cc;
+  margin-bottom: var(--indent-3);
+  border-radius: var(--indent-2);
+  background-color: var(--cl-light-green-accent);
 }
 
 .banner-students {
@@ -70,11 +31,11 @@ img {
 .students-list {
   display: flex;
   margin-top: 65px;
-  gap: 32px;
+  gap: var(--indent-8);
 }
 
 .student {
-  flex-basis: calc((100% - 2 * 32px) / 3);
+  flex-basis: calc((100% - 2 * var(--indent-8)) / 3);
   border-radius: 30px;
   color: rgba(18, 20, 23, 0.5);
   background-color: #f3f5f6;
@@ -84,20 +45,20 @@ img {
   display: flex;
   width: 288px;
   height: 78px;
-  margin-left: 16px;
-  margin-top: 32px;
+  margin-left: var(--indent-4);
+  margin-top: var(--indent-8);
   padding-top: 14px;
   border-radius: 15px;
   background-color: #4dc274;
 }
 
 .student-image-title img {
-  margin-left: 16px;
+  margin-left: var(--indent-4);
   border-radius: 50%;
 }
 
 .student-image-title div {
-  padding-left: 8px;
+  padding-left: var(--indent-2);
 }
 
 .student-image-title .student-name {
@@ -137,7 +98,7 @@ img {
 
   .rectangle {
     max-width: 135px;
-    height: 12px;
+    height: var(--indent-3);
     margin-left: 186px;
     margin-top: -48px;
   }
@@ -153,7 +114,7 @@ img {
   .subscribe-banner {
     max-width: 335px;
     margin-left: 0px;
-    padding-top: 40px;
+    padding-top: var(--indent-10);
     font-size: 14px;
     text-align: center;
     line-height: 1.72;
@@ -162,7 +123,7 @@ img {
   .students-list {
     display: block;
     margin: 0;
-    margin-top: 40px;
+    margin-top: var(--indent-10);
   }
 
   .students-list li:nth-child(n + 2) {
@@ -171,15 +132,15 @@ img {
 
   .student {
     margin: 0;
-    padding-top: 20px;
+    padding-top: var(--indent-10);
     max-height: 278px;
-    border-radius: 16px;
+    border-radius: var(--indent-4);
   }
 
   .student-image-title {
-    margin: 0 20px;
+    margin: 0 var(--indent-5);
     max-width: 295px;
-    border-radius: 8px;
+    border-radius: var(--indent-2);
   }
 
   .student-item {
@@ -250,7 +211,7 @@ img {
 
   .container-student {
     min-width: 1024px;
-    margin: 0 128px;
+    margin: 0 var(--indent-32);
   }
 
   .banner-region {
@@ -259,7 +220,7 @@ img {
 
   .rectangle {
     min-width: 169px;
-    max-height: 20px;
+    max-height: var(--indent-5);
   }
 
   .subscribe-banner {
@@ -269,11 +230,11 @@ img {
 
   .students-list {
     display: flex;
-    gap: 32px;
+    gap: var(--indent-8);
   }
 
   .student {
-    flex-basis: calc((100% - 2 * 32px) / 3);
+    flex-basis: calc((100% - 2 * var(--indent-8)) / 3);
     border-radius: 30px;
   }
 
@@ -282,5 +243,20 @@ img {
     min-width: 288px;
     max-height: 78px;
     border-radius: 15px;
+  }
+}
+
+/* Retina Display */
+@media only screen and (min-resolution: 2dppx) {
+  .students-list li img {
+    content: url('img/students/anna@2x.jpg'); /* Заміна на зображення з високою роздільною здатністю для першого зображення */
+  }
+
+  .students-list li:nth-child(2) img {
+    content: url('img/students/mykhailo@2x.jpg');
+  }
+
+  .students-list li:nth-child(3) img {
+    content: url('img/students/victoria@2x.jpg');
   }
 }

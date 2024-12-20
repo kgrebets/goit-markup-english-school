@@ -1,98 +1,75 @@
-<!-- @format -->
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap"
-      rel="stylesheet"
-    >
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    >
-    <link rel="stylesheet" href="./css/styles.css" >
-    <title>Students say</title>
-  </head>
-  <body>
-    <section id="students-say" class="students-say">
-      <div class="container-student">
-        <div class="banner-region">
-          <h2 class="banner-students">What our students say</h2>
-          <div class="rectangle"></div>
-          <p class="subscribe-banner">
-            Hear from our students about their learning journey with us, as they
-            share their experiences, progress, and the transformative impact
-          </p>
+<section id="students-say" class="students-say">
+  <div class="container">
+    <div class="banner-region">
+      <h2 class="banner-students">What our students say</h2>
+      <div class="rectangle"></div>
+      <p class="subscribe-banner">
+        Hear from our students about their learning journey with us, as they
+        share their experiences, progress, and the transformative impact
+      </p>
+    </div>
+    <ul class="students-list">
+      <li class="student">
+        <div class="student-image-title">
+          <img
+            src="/img/students/anna@1x.jpg"
+			srcset="
+            /img/students/anna@1x 1x,
+            /img/students/anna@2x.jpg 2x
+          "
+            alt="student"
+            width="50"
+            height="50"
+          >
+          <div>
+            <h3 class="student-name">Anna</h3>
+            <p class="student-title">Student</p>
+          </div>
         </div>
-        <ul class="students-list">
-          <li class="student">
-              <div class="student-image-title">
-                <img
-                  src="img/students/anna.jpg"
-                  alt="student"
-                  width="50"
-                  height="50"
-                >
-                <div>
-                <h3 class="student-name">Anna</h3>
-                <p class="student-title">Student</p>
-                </div>
-              </div>
-              <p class="student-item">
-                My experience at the language school has been nothing short of
-                amazing. The teachers are dedicated and the learning environment
-                is stimulating. I feel more confident in my English skills.
-              </p>
-          </li>
-          <li class="student">
-              <div class="student-image-title">
-                <img
-                  src="img/students/mykhailo.jpg"
-                  alt="student"
-                  width="50"
-                  height="50"
-                >
-                <div>
-                <h3 class="student-name">Mykhailo</h3>
-                <p class="student-title">Student</p>
-                </div>
-              </div>
-              <p class="student-item">
-                The school offers a great balance of language theory and
-                practical exercises. The personalized feedback from the teachers
-                has helped me improve my weak areas.
-              </p>
-          </li>
-          <li class="student">
-              <div class="student-image-title">
-                <img
-                  src="img/students/victoria.jpg"
-                  alt="student"
-                  width="50"
-                  height="50"
-                >
-                <div>
-                <h3 class="student-name">Victoria</h3>
-                <p class="student-title">Student</p>
-                </div>
-              </div>
-              <p class="student-item">
-                I love the dynamic and interactive teaching methods used here.
-                It's a great place to learn English in a fun and effective way.
-                I have definitely seen a big improvement in my language skills.
-              </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </body>
-</html>
+        <p class="student-item">
+          My experience at the language school has been nothing short of
+          amazing. The teachers are dedicated and the learning environment is
+          stimulating. I feel more confident in my English skills.
+        </p>
+      </li>
+      <li class="student">
+        <div class="student-image-title">
+          <img
+            src="img/students/mykhailo.jpg"
+            alt="student"
+            width="50"
+            height="50"
+          >
+          <div>
+            <h3 class="student-name">Mykhailo</h3>
+            <p class="student-title">Student</p>
+          </div>
+        </div>
+        <p class="student-item">
+          The school offers a great balance of language theory and practical
+          exercises. The personalized feedback from the teachers has helped me
+          improve my weak areas.
+        </p>
+      </li>
+      <li class="student">
+        <div class="student-image-title">
+          <img
+            src="img/students/victoria.jpg"
+            alt="student"
+            width="50"
+            height="50"
+          >
+          <div>
+            <h3 class="student-name">Victoria</h3>
+            <p class="student-title">Student</p>
+          </div>
+        </div>
+        <p class="student-item">
+          I love the dynamic and interactive teaching methods used here. It's a
+          great place to learn English in a fun and effective way. I have
+          definitely seen a big improvement in my language skills.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
