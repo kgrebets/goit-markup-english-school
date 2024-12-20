@@ -2,6 +2,7 @@ const body = document.body;
 const overlayMenu = document.querySelector('.overlay-menu');
 const burgerMenu = document.querySelector('.burger-menu');
 const closeMenu = document.querySelector('.close-menu');
+const menuLinks = document.querySelectorAll('.overlay-menu a');
 
 const closeMenuWithAnimation = () => {
   overlayMenu.classList.add('closing');
@@ -21,3 +22,7 @@ burgerMenu.addEventListener('click', () => {
 });
 
 closeMenu.addEventListener('click', closeMenuWithAnimation);
+
+menuLinks.forEach(link => {
+  link.addEventListener('click', closeMenuWithAnimation); // Закрываем меню
+});
