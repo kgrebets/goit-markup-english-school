@@ -1,261 +1,226 @@
+:root {
+  --first-card-initial-degree: 0;
+  --second-card-initial-degree: 0;
+}
+
 .english-package {
-    padding-left: 20px;
-    padding-right: 20px;
-    border: 1px solid red;
+  padding-inline: var(--indent-5);
 }
 
 .english-package-container {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 40px 20px 64px 20px;
-    border-radius: 16px;
-    background: linear-gradient(80deg,
-            #4dc274 0%,
-            #bee8cc 100%);
-    overflow: hidden;
+  padding: var(--indent-10) var(--indent-5) var(--indent-16);
+  border-radius: 16px;
+  background: linear-gradient(80deg,
+  var(--cl-dark-green) 0%,
+  var(--cl-light-green-accent) 100%);
+  overflow: hidden;
 }
 
 .english-package-heading {
-    color: #ffffff;
-    font-size: 38px;
-    font-weight: 700;
-    line-height: 1.05;
-    margin-bottom: 65px;
+  color: var(--cl-white);
+  font-size: 38px;
+  font-weight: var(--weight-bold);
+  line-height: 1.05;
+  margin-bottom: var(--indent-16);
 }
 
 .highlighted-text {
-    color: #bee8cc;
+  color: var(--cl-light-green-accent);
 }
 
 .english-package-content-wrapper {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .english-package-card {
-    border-radius: 16px;
-    background: #ffffff;
-    padding: 40px 20px;
+  border-radius: 16px;
+  background: var(--cl-white);
+  padding: var(--indent-10) var(--indent-5);
 }
 
 .english-package-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 16px;
-    transform: rotate(11deg);
-    background: #ffffff;
-    opacity: 50%;
-    z-index: -1;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  transform: rotate(var(--second-card-initial-degree));
+  background: var(--cl-white);
+  opacity: 50%;
+  z-index: -1;
+  transition: transform var(--base-transition);
 }
 
 .english-package-card::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 16px;
-    transform: rotate(-9deg);
-    background: #d4fde1;
-    ;
-    z-index: -1;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  transform: rotate(var(--first-card-initial-degree));
+  background: var(--cl-light-green);
+  z-index: -1;
+  transition: transform var(--base-transition);
 }
 
 .english-package-card-title {
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-    margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--indent-5);
 }
 
 .english-package-benefits-list {
-    margin-bottom: 20px;
+  margin-bottom: var(--indent-5);
 }
 
 .english-package-benefit-item:not(:last-child) {
-    margin-bottom: 16px;
+  margin-bottom: var(--indent-4);
 }
 
 .english-package-benefit-item {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.43;
-    letter-spacing: -0.02em;
-    display: flex;
-    column-gap: 8px;
-    align-items: center;
+  font-size: 14px;
+  font-weight: var(--weight-bold);
+  line-height: 1.43;
+  letter-spacing: -0.02em;
+  display: flex;
+  column-gap: var(--indent-2);
+  align-items: center;
 }
 
 .english-package-benefit-item::before {
-    content: '';
-    width: 20px;
-    height: 20px;
-    padding: 3px;
-    background-color: #4dc274;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    border-radius: 50%;
-    background-image: url(../img/proposal/check.svg);
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: 12px;
+  content: '';
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+  background-color: var(--cl-dark-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-image: url(../img/proposal/check.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 12px;
 }
 
-.cta-button {
-    border-radius: 12px;
-    background-color: #4dc274;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.71;
-    display: flex;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.cta-button:hover,
-.cta-button:focus {
-    background-color: #38ae5f;
+@media only screen and (max-width: 767px) {
+  .cta-button {
+    width: 100%;
+    min-width: inherit;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .english-package {
-        /* min-width: 704px; */
-        padding-left: 32px;
-        padding-right: 32px;
-    }
+  .english-package-container {
+    padding: var(--indent-16) var(--indent-4) 92px var(--indent-4);
+    border-radius: 30px;
+  }
 
-    .english-package-container {
-        /* min-width: 704px;
-        max-width: 704px; */
-        padding: 64px 18px 92px 18px;
-        border-radius: 30px;
-    }
+  .english-package-heading {
+    font-size: 60px;
+    line-height: 1.17;
+    padding-left: 14px;
+    margin-bottom: 84px;
+  }
 
-    .english-package-heading {
-        font-size: 60px;
-        line-height: 1.17;
-        padding-left: 14px;
-        margin-bottom: 84px;
-    }
+  .english-package-card {
+    border-radius: 30px;
+    padding: var(--indent-16) var(--indent-8);
+    background-image: url(../img/proposal/the-books.png);
+    background-position: 503px 173px;
+    background-size: 214px 263px;
+    background-repeat: no-repeat;
+  }
 
-    .english-package-card {
-        border-radius: 30px;
-        padding: 64px 32px;
-        background-image: url(../img/proposal/the-books.png);
-        background-position: 503px 173px;
-        background-size: 214px 263px;
-        background-repeat: no-repeat;
-    }
+  .english-package-card::before {
+    border-radius: 30px;
+    transform: rotate(var(--second-card-initial-degree)) translateY(6px);
+  }
 
-    .english-package-card::before {
-        border-radius: 30px;
-        transform: rotate(10.655deg) translateY(6px);
-    }
+  .english-package-card::after {
+    border-radius: 30px;
+    transform: rotate(var(--first-card-initial-degree)) translateY(2px);
+  }
 
-    .english-package-card::after {
-        border-radius: 30px;
-        transform: rotate(-9.864deg) translateY(2px);
-    }
+  .english-package-card-title {
+    font-size: 40px;
+    letter-spacing: -0.02em;
+    margin-bottom: var(--indent-8);
+  }
 
-    .english-package-card-title {
-        font-size: 40px;
-        letter-spacing: -0.02em;
-        margin-bottom: 32px;
-    }
+  .english-package-benefits-list {
+    margin-bottom: var(--indent-8);
+  }
 
-    .english-package-benefits-list {
-        margin-bottom: 32px;
-    }
+  .english-package-benefit-item {
+    width: 448px;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    column-gap: var(--indent-4);
+  }
 
-    .english-package-benefit-item {
-        width: 448px;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: -0.02em;
-        column-gap: 16px;
-    }
-
-    .english-package-benefit-item::before {
-        width: 28px;
-        height: 28px;
-        padding: 4px;
-        background-size: 20px;
-    }
-
-    .cta-button {
-        display: inline-flex;
-        padding: 16px 64px;
-        font-size: 18px;
-        line-height: 1.56;
-    }
+  .english-package-benefit-item::before {
+    width: 28px;
+    height: 28px;
+    padding: var(--indent-1);
+    background-size: 20px;
+  }
 }
 
-@media screen and (min-width: 768px) and (min-resolution: 192dpi),
-screen and (min-width: 768px) and (min-resolution: 2dppx),
-screen and (min-width: 768px) and (min-device-pixel-ratio: 2) {
-    .english-package-card {
-        background-image: url(../img/proposal/the-books@2x.png);
-    }
+@media screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx), screen and (min-width: 768px) and (min-device-pixel-ratio: 2) {
+  .english-package-card {
+    background-image: url(../img/proposal/the-books@2x.png);
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .english-package {
-        min-width: 1152px;
-        padding-left: 64px;
-        padding-right: 64px;
-    }
+  .english-package-container {
+    padding: var(--indent-16) var(--indent-16) 141px;
+  }
 
-    .english-package-container {
-        min-width: 1152px;
-        padding: 64px 64px 141px 64px;
-    }
+  .english-package-heading {
+    max-width: 776px;
+    padding-left: 0;
+    margin-bottom: 133px;
+  }
 
-    .english-package-heading {
-        max-width: 776px;
-        padding-left: 0;
-        margin-bottom: 133px;
-    }
+  .english-package-card {
+    padding-inline: var(--indent-16);
+    background-position: 810px 128px;
+  }
 
-    .english-package-card {
-        padding-left: 64px;
-        padding-right: 64px;
-        background-position: 810px 128px;
-    }
+  .english-package-card::before {
+    border-radius: 30px;
+    transform: rotate(var(--second-card-initial-degree)) translate(5px, 46px);
+    width: 98.7%;
+    height: 85%;
+  }
 
-    .english-package-card::before {
-        border-radius: 30px;
-        transform: rotate(11deg) translate(5px, 46px);
-        width: 98.7%;
-        height: 85%;
-    }
+  .english-package-card::after {
+    border-radius: 30px;
+    transform: rotate(var(--first-card-initial-degree)) translate(-24px, 10px);
+    width: 102.5%;
+    height: 98.3%;
+  }
 
-    .english-package-card::after {
-        border-radius: 30px;
-        transform: rotate(-8deg) translate(-24px, 10px);
-        width: 102.5%;
-        height: 98.3%;
-    }
+  .english-package-card-title {
+    margin-bottom: var(--indent-10);
+  }
 
-    .english-package-card-title {
-        margin-bottom: 40px;
-    }
+  .english-package-benefits-list {
+    margin-bottom: var(--indent-10);
 
-    .english-package-benefits-list {
-        margin-bottom: 39px;
-    }
+  }
 
-    .english-package-benefit-item {
-        width: 654px;
-    }
+  .english-package-benefit-item {
+    width: 654px;
+  }
 }
