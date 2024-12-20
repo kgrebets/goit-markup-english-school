@@ -32,6 +32,7 @@
   --indent-11: 44px;
   --indent-12: 48px;
   --indent-16: 64px;
+  --indent-18: 72px;
   --indent-32: 128px;
   /* Transitions */
   --base-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
