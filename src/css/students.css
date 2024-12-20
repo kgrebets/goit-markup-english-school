@@ -1,5 +1,38 @@
+:root {
+  --cl-dark-rgb: 18, 20, 23;
+  --cl-wite-rgb: 255, 255, 255;
+  --cl-dark-green: #4dc274;
+  --cl-dark-green-hover: #38ae5f;
+  --cl-grey: #f3f5f6;
+  --cl-white: #ffffff;
+  --font-family: 'Manrope', sans-serif;
+  --weight-regular: 400;
+  --weight-bold: 700;
+  --font-size-1: 12px;
+  --font-size-2: 14px;
+  --font-size-3: 15px;
+  --font-size-4: 16px;
+  --font-size-5: 18px;
+  --font-size-6: 20px;
+  --font-size-7: 32px;
+  --font-size-8: 40px;
+  --line-height-1: 1.72;
+  --line-height-2: 1.2;
+  --line-height-3: 1.65;
+  --line-height-4: 1.5;
+  --indent-2: 8px;
+  --indent-3: 12px;
+  --indent-4: 16px;
+  --indent-5: 20px;
+  --indent-6: 15px;
+  --indent-7: 30px;
+  --indent-8: 32px;
+  --region-1: 832px;
+  --region-2: 335px;
+}
+
 .banner-region {
-  width: 832px;
+  width: var(--region-1);
 }
 
 .rectangle {
@@ -14,18 +47,18 @@
 
 .banner-students {
   margin-left: 290px;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 1.2;
+  font-size: var(--font-size-8);
+  font-weight: var(--weight-bold);
+  line-height: var(--line-height-2);
 }
 
 .subscribe-banner {
   width: 647px;
   margin-left: 186px;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: var(--font-size-5);
+  font-weight: var(--weight-regular);
   text-align: center;
-  line-height: 1.65;
+  line-height: var(--line-height-3);
 }
 
 .students-list {
@@ -36,9 +69,9 @@
 
 .student {
   flex-basis: calc((100% - 2 * var(--indent-8)) / 3);
-  border-radius: 30px;
-  color: rgba(18, 20, 23, 0.5);
-  background-color: #f3f5f6;
+  border-radius: var(--indent-7);
+  color: rgba(var(--cl-dark-rgb), 0.5);
+  background-color: var(--cl-grey);
 }
 
 .student-image-title {
@@ -48,8 +81,8 @@
   margin-left: var(--indent-4);
   margin-top: var(--indent-8);
   padding-top: 14px;
-  border-radius: 15px;
-  background-color: #4dc274;
+  border-radius: var(--indent-6);
+  background-color: var(--cl-dark-green);
 }
 
 .student-image-title img {
@@ -62,38 +95,34 @@
 }
 
 .student-image-title .student-name {
-  font-size: 20px;
-  color: #ffffff;
+  font-size: var(--font-size-6);
+  color: var(--cl-white);
 }
 
 .student-title {
-  font-size: 12px;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.5);
+  font-size: var(--font-size-1);
+  font-weight: var(--weight-regular);
+  color: rgba(var(--cl-wite-rgb), 0.5);
 }
 
 .student-item {
   height: 144px;
   margin: 32px 32px 40px 32px;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1.5;
-  color: rgba(18, 20, 23, 0.5);
+  font-size: var(--font-size-3);
+  font-weight: var(--weight-regular);
+  line-height: var(--line-height-4);
+  color: rgba(var(--cl-dark-rgb), 0.5);
 }
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
-  .students-say {
-    padding: 80px 0 80px;
-  }
-
   .container-student {
-    max-width: 335px;
-    margin: 0 16px;
+    max-width: var(--region-2);
+    margin: 0 var(--indent-4);
   }
 
   .banner-region {
-    max-width: 335px;
+    max-width: var(--region-2);
   }
 
   .rectangle {
@@ -104,20 +133,20 @@
   }
 
   .banner-students {
-    max-width: 335px;
+    max-width: var(--region-2);
     margin-left: 10px;
-    font-size: 32px;
+    font-size: var(--font-size-7);
     line-height: 1.12;
     text-align: center;
   }
 
   .subscribe-banner {
-    max-width: 335px;
+    max-width: var(--region-2);
     margin-left: 0px;
     padding-top: var(--indent-10);
-    font-size: 14px;
+    font-size: var(--font-size-2);
     text-align: center;
-    line-height: 1.72;
+    line-height: var(--line-height-1);
   }
 
   .students-list {
@@ -146,17 +175,13 @@
   .student-item {
     max-width: 267px;
     height: 120px;
-    font-size: 14px;
-    list-style: 1.72;
+    font-size: var(--font-size-1);
+    list-style: var(--line-height-1);
   }
 }
 
 /* Tablet */
 @media only screen and (min-width: 768px) {
-  .students-say {
-    padding: 100px 0 100px;
-  }
-
   .container-student {
     max-width: 704px;
     margin: 0 16px;
@@ -191,16 +216,12 @@
   }
 
   .students-list li .student-item {
-    font-size: 16px;
+    font-size: var(--font-size-4);
   }
 }
 
 /* Desktop */
 @media only screen and (min-width: 1200px) {
-  .students-say {
-    padding: 150px 0 150px;
-  }
-
   .students-list {
     display: flex;
   }
@@ -215,7 +236,7 @@
   }
 
   .banner-region {
-    min-width: 832px;
+    min-width: var(--region-1);
   }
 
   .rectangle {
@@ -235,14 +256,14 @@
 
   .student {
     flex-basis: calc((100% - 2 * var(--indent-8)) / 3);
-    border-radius: 30px;
+    border-radius: var(--indent-7);
   }
 
   .student-image-title {
     display: flex;
     min-width: 288px;
     max-height: 78px;
-    border-radius: 15px;
+    border-radius: var(--indent-6);
   }
 }
 
