@@ -1,3 +1,4 @@
+/* Styles for Mobile devices */
 .container {
   max-width: 375px;
   margin: 0 auto 80px;
@@ -20,9 +21,7 @@
     padding-inline: var(--indent-32);
     margin-bottom: 150px;
   }
-}
 
-@media screen and (min-width: 1280px) {
   .container.wider {
     padding-inline: var(--indent-16);
   }
