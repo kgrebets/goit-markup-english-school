@@ -14,7 +14,7 @@
   width: 100%;
 }
 
-.leave-an-application .container {
+.leave-an-application .section-items-wrapper {
   display: flex;
   gap: var(--indent-8);
   justify-content: center;
@@ -109,6 +109,11 @@
 @media only screen and (max-width: 767px) {
   .leave-an-application .radio-group-items {
     flex-direction: column;
+  }
+
+  .leave-an-application .subtitle {
+    max-width: 375px;
+    margin: 0 auto var(--indent-5);
   }
 
   .notice {

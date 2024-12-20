@@ -1,0 +1,115 @@
+/*
+  //
+  // Common
+  // _____________________________
+ */
+
+.about-us .grid-container {
+  margin-top: var(--indent-10);
+  display: flex;
+  gap: var(--indent-5);
+  border: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.about-us .grid-item {
+  background-color: var(--cl-grey);
+  border-radius: 16px;
+  border: none;
+  text-align: left;
+  padding: var(--indent-8);
+  width: 100%;
+}
+
+.about-us .grid-item-img {
+  display: flex;
+  justify-content: center;
+  background-color: var(--cl-dark-green);
+  align-items: center;
+}
+
+.about-us .grid-item-img img {
+  max-width: 254px;
+  width: 100%;
+  height: auto;
+}
+
+.about-us .grid-item-num {
+  font-size: 28px;
+  color: var(--cl-dark-green);
+  font-weight: var(--weight-bold);
+  line-height: 1.14;
+  margin-bottom: var(--indent-4);
+}
+
+.about-us .grid-item-text {
+  font-size: 20px;
+  color: var(--cl-dark);
+  font-weight: var(--weight-bold);
+  line-height: 1.2;
+}
+
+/*
+  //
+  // Tablet
+  // _____________________________
+ */
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .about-us .subtitle {
+    padding: 0 23px;
+  }
+
+  .about-us .grid-container {
+    flex-direction: row;
+    margin-top: 64px;
+    gap: var(--indent-8);
+  }
+
+  .about-us .grid-item {
+    flex: 1 0 39%;
+    border-radius: 30px;
+  }
+}
+
+/*
+  //
+  // Desktop
+  // _____________________________
+ */
+
+@media (min-width: 1280px) {
+  .about-us .subtitle {
+    padding: 0 183px;
+  }
+
+  .about-us .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: var(--indent-8);
+    grid-row-gap: var(--indent-8);
+  }
+
+  .about-us .grid-item:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .about-us .grid-item:nth-child(2) {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .about-us .grid-item:nth-child(3) {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .about-us .grid-item:nth-child(4) {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .about-us .grid-item:nth-child(5) {
+    grid-area: 1 / 3 / 3 / 4;
+  }
+}

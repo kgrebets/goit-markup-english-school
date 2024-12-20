@@ -5,20 +5,20 @@
 :root {
   --cl-dark: #121417;
   --cl-dark-rgb: 18, 20, 23;
-  --cl-dark-green: #4DC274;
-  --cl-dark-green-hover: #38AE5F;
-  --cl-light-green: #D4FDE1;
-  --cl-light-green-accent: #BEE8CC;
-  --cl-grey: #F3F5F6;
-  --cl-white: #FFFFFF;
-  --font-family: "Manrope", sans-serif;
+  --cl-dark-green: #4dc274;
+  --cl-dark-green-hover: #38ae5f;
+  --cl-light-green: #d4fde1;
+  --cl-light-green-accent: #bee8cc;
+  --cl-grey: #f3f5f6;
+  --cl-white: #ffffff;
+  --font-family: 'Manrope', sans-serif;
   --weight-regular: 400;
   --weight-semibold: 600;
   --weight-bold: 700;
-  --cl-hover-primary: #38AE5F;
-  --cl-light-green-secondary: #BEE8CC;
+  --cl-hover-primary: #38ae5f;
+  --cl-light-green-secondary: #bee8cc;
   --font-size-base: 14px;
-  --line-height-base: 1.7;
+  --line-height-base: 1.71429;
   --indent-1: 4px;
   --indent-2: 8px;
   --indent-3: 12px;
@@ -31,6 +31,8 @@
   --indent-10: 40px;
   --indent-11: 44px;
   --indent-12: 48px;
+  --indent-16: 64px;
+  --indent-32: 128px;
   /* Transitions */
   --base-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --fast-trns: 300ms ease;
@@ -51,23 +53,21 @@ p {
   color: rgba(var(--cl-dark-rgb), 0.5);
 }
 
-section {
-  padding-bottom: calc(var(--indent-10) * 2);
-  padding-top: calc(var(--indent-10) * 2);
-}
-
-section>h2,
-section>p {
-  text-align: center;
-}
-
 h2 {
   color: var(--cl-dark);
   font-size: 32px;
   font-weight: var(--weight-bold);
   letter-spacing: -0.02em;
   line-height: 1.125;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 40px;
+    line-height: 1.2;
+  }
 }
 
 .title-subtext-background {
@@ -95,17 +95,19 @@ h2 {
 }
 
 .subtitle {
-  color: rgba(var(--cl-dark-rgb), 0.8);
+  color: rgba(var(--cl-dark-rgb), 0.5);
   font-size: 18px;
   font-weight: var(--weight-regular);
-  line-height: 1.6;
+  line-height: 1.66667;
+  margin-bottom: var(--indent-16);
+  text-align: center;
 }
 
 @media only screen and (max-width: 767px) {
   .subtitle {
     font-size: 14px;
-    line-height: 24px;
-    margin-bottom: var(--indent-5);
+    line-height: 1.71428;
+    margin-bottom: var(--indent-10);
   }
 }
 
@@ -123,19 +125,15 @@ button {
   padding: 0;
 }
 
-@media only screen and (max-width: 767px) {
-
-  section>h2,
-  section>p {
-    padding-inline: var(--indent-5);
-  }
-}
-
 @media only screen and (min-width: 768px) {
   button {
     font-size: 18px;
     height: 60px;
     line-height: 1.5;
+  }
+
+  .title-subtext-background:hover:before {
+    height: 44px;
   }
 }
 

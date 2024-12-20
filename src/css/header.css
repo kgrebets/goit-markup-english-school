@@ -1,44 +1,215 @@
 .header {
-  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 375px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cl-white);
+}
+
+.header-container {
+  width: 100%;
+  padding: var(--indent-5);
+  flex-shrink: 0;
 }
 .nav {
   display: flex;
   justify-content: space-between;
-}
-.nav-logo {
-  display: inline-flex;
   align-items: center;
-  justify-content: center;
+}
+.nav-logo-text {
+  font-size: 20px;
+  font-weight: var(--weight-bold);
+  align-content: center;
+}
+
+.nav-logo-text span {
+  color: var(--cl-dark-green);
+}
+.nav-menu {
+  margin-top: 196px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.nav-menu a {
+  color: var(--cl-white);
+  font-weight: var(--weight-semibold);
+  line-height: 1.2857;
+}
+.nav-items {
+  background-color: var(--cl-dark-green);
+  width: 240px;
+  height: 100%;
+  padding: var(--indent-5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .nav-list {
+  display: none;
+}
+.social-links {
   display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+.social-links svg {
+  display: flex;
+  width: 26px;
+  height: 26px;
+  opacity: 0.8;
+  fill: var(--cl-white);
+}
+.social-links a {
+  display: flex;
+  padding: var(--indent-2);
   align-items: center;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.overlay-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
   justify-content: flex-end;
-  gap: 40px;
+  transform: translateX(100%);
+  transition: var(--base-transition);
 }
-.nav-link {
-  position: relative;
+
+.overlay-menu.active {
+  display: flex;
+  transform: translateX(0);
+}
+
+.burger-menu {
+  all: unset;
   display: block;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  transition: 200ms ease-in;
+  background: none;
+  border: none;
+  cursor: pointer;
+  stroke: var(--cl-dark);
 }
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+.burger-menu:hover,
+.burger-menu:focus,
+.burger-menu:active {
+  background: none;
+  color: inherit;
+  border: none;
+  box-shadow: none;
+  transform: none;
 }
-.nav-link::after {
-  content: '';
+.close-menu {
+  all: unset;
+  background: none;
+  border: none;
+  color: var(--cl-white);
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(100%);
-  width: 110%;
-  height: 4px;
-  border-radius: 4px;
-  transform-origin: center;
-  animation: stretch 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms both;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
 }
-.nav-link.active::after {
-  background: #747bff;
+
+.nav-list {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .header {
+    max-width: 768px;
+  }
+
+  .nav-items {
+    width: 384px;
+  }
+  .close-menu svg {
+    width: 40px;
+    height: 40px;
+  }
+  .social-links svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .overlay-menu {
+    display: none;
+  }
+
+  .header {
+    max-width: 1280px;
+    display: flex;
+  }
+  .header-container {
+    padding: 20px 128px;
+    justify-content: space-between;
+  }
+
+  .nav-menu {
+    margin: 0;
+    flex-direction: row;
+  }
+  .nav-menu a {
+    position: relative;
+  }
+  .nav-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: var(--base-transition);
+    background-color: var(--cl-dark-green);
+  }
+  .nav-menu a:hover::after {
+    width: 37px;
+  }
+  .burger-menu {
+    display: none;
+  }
+  .social-links svg {
+    width: 28px;
+    height: 28px;
+  }
+  .nav-list {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 160px;
+  }
+
+  .nav-list a {
+    color: var(--cl-dark);
+  }
+
+  .social-links svg {
+    fill: var(--cl-dark);
+  }
+
+  .social-links a {
+    border: 1px solid rgba(18, 20, 23, 0.1);
+  }
+
+  .social-links a:hover {
+    border: 1px solid rgba(77, 194, 116, 0.1);
+  }
+
+  .social-links svg:hover {
+    fill: var(--cl-dark-green);
+  }
 }
