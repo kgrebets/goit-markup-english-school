@@ -1,283 +1,71 @@
-:root {
-  --cl-dark-rgb: 18, 20, 23;
-  --cl-wite-rgb: 255, 255, 255;
-  --cl-dark-green: #4dc274;
-  --cl-dark-green-hover: #38ae5f;
-  --cl-grey: #f3f5f6;
-  --cl-white: #ffffff;
-  --font-family: 'Manrope', sans-serif;
-  --weight-regular: 400;
-  --weight-bold: 700;
-  --font-size-1: 12px;
-  --font-size-2: 14px;
-  --font-size-3: 15px;
-  --font-size-4: 16px;
-  --font-size-5: 18px;
-  --font-size-6: 20px;
-  --font-size-7: 32px;
-  --font-size-8: 40px;
-  --line-height-1: 1.72;
-  --line-height-2: 1.2;
-  --line-height-3: 1.65;
-  --line-height-4: 1.5;
-  --indent-2: 8px;
-  --indent-3: 12px;
-  --indent-4: 16px;
-  --indent-5: 20px;
-  --indent-6: 15px;
-  --indent-7: 30px;
-  --indent-8: 32px;
-  --region-1: 832px;
-  --region-2: 335px;
+.students-say .intro-wrapper {
+  margin-bottom: var(--indent-10);
 }
 
-.banner-region {
-  width: var(--region-1);
-}
-
-.rectangle {
-  width: 169px;
-  height: var(--indent-5);
-  margin-left: 480px;
-  margin-top: -16px;
-  margin-bottom: var(--indent-3);
-  border-radius: var(--indent-2);
-  background-color: var(--cl-light-green-accent);
-}
-
-.banner-students {
-  margin-left: 290px;
-  font-size: var(--font-size-8);
-  font-weight: var(--weight-bold);
-  line-height: var(--line-height-2);
-}
-
-.subscribe-banner {
-  width: 647px;
-  margin-left: 186px;
-  font-size: var(--font-size-5);
-  font-weight: var(--weight-regular);
-  text-align: center;
-  line-height: var(--line-height-3);
-}
-
-.students-list {
-  display: flex;
-  margin-top: 65px;
-  gap: var(--indent-8);
-}
-
-.student {
-  flex-basis: calc((100% - 2 * var(--indent-8)) / 3);
-  border-radius: var(--indent-7);
-  color: rgba(var(--cl-dark-rgb), 0.5);
+.students-list .student {
+  padding: var(--indent-5) var(--indent-5) var(--indent-10);
   background-color: var(--cl-grey);
+  border-radius: 16px;
+  height: auto;
 }
 
-.student-image-title {
+.students-list .student-image-title {
   display: flex;
-  width: 288px;
-  height: 78px;
-  margin-left: var(--indent-4);
-  margin-top: var(--indent-8);
-  padding-top: 14px;
-  border-radius: var(--indent-6);
+  gap: var(--indent-2);
   background-color: var(--cl-dark-green);
+  padding: var(--indent-4);
+  border-radius: 8px;
+  align-items: center;
+  margin-bottom: var(--indent-5);
 }
 
-.student-image-title img {
-  margin-left: var(--indent-4);
+.students-list .student-image {
   border-radius: 50%;
 }
 
-.student-image-title div {
-  padding-left: var(--indent-2);
-}
-
-.student-image-title .student-name {
-  font-size: var(--font-size-6);
+.students-list .student-name {
   color: var(--cl-white);
+  font-size: 20px;
+  line-height: 1.2;
 }
 
-.student-title {
-  font-size: var(--font-size-1);
-  font-weight: var(--weight-regular);
-  color: rgba(var(--cl-wite-rgb), 0.5);
+.students-list .student-title {
+  color: rgba(var(--cl-white-rgb), .5);
+  font-size: 12px;
+  line-height: 1.3333;
 }
 
-.student-item {
-  height: 144px;
-  margin: 32px 32px 40px 32px;
-  font-size: var(--font-size-3);
-  font-weight: var(--weight-regular);
-  line-height: var(--line-height-4);
-  color: rgba(var(--cl-dark-rgb), 0.5);
+.students-list .student-short-description {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
-/* Mobile */
-@media only screen and (max-width: 767px) {
-  .container-student {
-    max-width: var(--region-2);
-    margin: 0 var(--indent-4);
-  }
-
-  .banner-region {
-    max-width: var(--region-2);
-  }
-
-  .rectangle {
-    max-width: 135px;
-    height: var(--indent-3);
-    margin-left: 186px;
-    margin-top: -48px;
-  }
-
-  .banner-students {
-    max-width: var(--region-2);
-    margin-left: 10px;
-    font-size: var(--font-size-7);
-    line-height: 1.12;
-    text-align: center;
-  }
-
-  .subscribe-banner {
-    max-width: var(--region-2);
-    margin-left: 0px;
-    padding-top: var(--indent-10);
-    font-size: var(--font-size-2);
-    text-align: center;
-    line-height: var(--line-height-1);
-  }
-
-  .students-list {
-    display: block;
-    margin: 0;
-    margin-top: var(--indent-10);
-  }
-
-  .students-list li:nth-child(n + 2) {
-    display: none;
-  }
-
-  .student {
-    margin: 0;
-    padding-top: var(--indent-10);
-    max-height: 278px;
-    border-radius: var(--indent-4);
-  }
-
-  .student-image-title {
-    margin: 0 var(--indent-5);
-    max-width: 295px;
-    border-radius: var(--indent-2);
-  }
-
-  .student-item {
-    max-width: 267px;
-    height: 120px;
-    font-size: var(--font-size-1);
-    list-style: var(--line-height-1);
-  }
+.students-list .student-item {
+  padding-inline: var(--indent-3);
 }
 
-/* Tablet */
 @media only screen and (min-width: 768px) {
-  .container-student {
-    max-width: 704px;
-    margin: 0 16px;
+  .students-say .intro-wrapper {
+    margin-bottom: var(--indent-16);
   }
 
-  .banner-region {
-    max-width: 704px;
+  .students-say .subtitle {
+    max-width: 647px;
+    margin: 0 auto;
   }
 
-  .rectangle {
-    margin-left: 340px;
+  .students-list .student {
+    padding: var(--indent-8) var(--indent-4) var(--indent-10);
   }
 
-  .banner-students {
-    margin-left: 150px;
+  .students-list .student-item {
+    font-size: 16px;
+    line-height: 1.5;
+    padding-inline: var(--indent-4);
   }
 
-  .subscribe-banner {
-    margin-left: 36px;
-  }
-
-  .students-list {
-    gap: 32px;
-  }
-
-  .student {
-    flex-basis: calc((100% - 1 * 32px) / 2);
-  }
-
-  .students-list li:last-child {
-    display: none;
-  }
-
-  .students-list li .student-item {
-    font-size: var(--font-size-4);
-  }
-}
-
-/* Desktop */
-@media only screen and (min-width: 1200px) {
-  .students-list {
-    display: flex;
-  }
-
-  .students-list li:last-child {
-    display: list-item;
-  }
-
-  .container-student {
-    min-width: 1024px;
-    margin: 0 var(--indent-32);
-  }
-
-  .banner-region {
-    min-width: var(--region-1);
-  }
-
-  .rectangle {
-    min-width: 169px;
-    max-height: var(--indent-5);
-  }
-
-  .subscribe-banner {
-    min-width: 647px;
-    margin-left: 186px;
-  }
-
-  .students-list {
-    display: flex;
-    gap: var(--indent-8);
-  }
-
-  .student {
-    flex-basis: calc((100% - 2 * var(--indent-8)) / 3);
-    border-radius: var(--indent-7);
-  }
-
-  .student-image-title {
-    display: flex;
-    min-width: 288px;
-    max-height: 78px;
-    border-radius: var(--indent-6);
-  }
-}
-
-/* Retina Display */
-@media only screen and (min-resolution: 2dppx) {
-  .students-list li img {
-    content: url('img/students/anna@2x.jpg'); /* Заміна на зображення з високою роздільною здатністю для першого зображення */
-  }
-
-  .students-list li:nth-child(2) img {
-    content: url('img/students/mykhailo@2x.jpg');
-  }
-
-  .students-list li:nth-child(3) img {
-    content: url('img/students/victoria@2x.jpg');
+  .students-list .student-image-title {
+    margin-bottom: var(--indent-8);
   }
 }
