@@ -15,7 +15,9 @@
 /* Sections style */
 @import url('./header.css');
 @import url('./hero.css');
+@import url('./about-us.css');
 @import url('./our-lessons.css');
 @import url('./footer.css');
 @import url('./leave-application.css');
+@import url('./proposal.css');
 @import url('./our-teachers.css');
