@@ -19,21 +19,23 @@
 .ourlessons-list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: var(--indent-5);
 }
 
 @media only screen and (min-width: 768px) {
   .ourlessons-list {
     flex-direction: row;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: var(--indent-8);
   }
 }
 
 .ourlessons-list-item {
-  width: 336px;
-  height: 400px;
-  flex-shrink: 0;
+  max-width: 336px;
+  margin-right: -1px;
+  padding: var(--indent-10) var(--indent-5);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,20 +46,30 @@
 
 @media only screen and (min-width: 768px) {
   .ourlessons-list-item {
-    height: 404px;
+    width: 336px;
+    margin-right: 0;
     border-radius: 30px;
+    padding: var(--indent-8) var(--indent-4);
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .ourlessons-list-item {
     width: 320px;
+    padding: var(--indent-8) var(--indent-8);
   }
 }
 
 .ourlessons-list-item:nth-child(2) {
   background: var(--cl-dark-green);
 }
+
+@media only screen and (min-width: 1280px) {
+  .ourlessons-list-item:nth-child(2) {
+    max-width: 320px;
+  }
+}
+
 .ourlessons-list-item:nth-child(2) p {
   color: var(--cl-white);
 }
@@ -77,15 +89,9 @@
   background: var(--cl-white);
 }
 
-@media only screen and (min-width: 768px) {
-  .ourlessons-list-item {
-    height: 404px;
-  }
-}
-
 @media only screen and (min-width: 1280px) {
   .ourlessons-list-item {
-    width: 320px;
+    max-width: 320px;
   }
 }
 
@@ -96,14 +102,7 @@
   font-weight: var(--weight-bold);
   line-height: 1.2;
   letter-spacing: -0.02em;
-  margin-top: var(--indent-10);
   margin-bottom: var(--indent-4);
-}
-
-@media only screen and (min-width: 768px) {
-  .ourlessons-list-item-header {
-    margin-top: var(--indent-8);
-  }
 }
 
 .ourlessons-list-item-price {
@@ -131,15 +130,19 @@
 
 .ourlessons-desc-wrapper {
   margin-bottom: var(--indent-5);
-  width: 295px;
-  height: 132px;
-  flex-shrink: 0;
+  max-width: 295px;
+  min-height: 132px;
 }
 
 @media only screen and (min-width: 768px) {
   .ourlessons-desc-wrapper {
     margin-bottom: var(--indent-8);
-    width: 304px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .ourlessons-desc-wrapper {
+    min-height: 148px;
   }
 }
 
@@ -155,17 +158,6 @@
 }
 
 .ourlessons-list-item-button {
-  min-width: 295px;
-}
-
-@media only screen and (min-width: 768px) {
-  .ourlessons-list-item-button {
-    min-width: 304px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .ourlessons-list-item-button {
-    min-width: 256px;
-  }
+  min-width: 140px;
+  width: 100%;
 }
