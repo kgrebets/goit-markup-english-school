@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <script type="module" crossorigin src="/goit-markup-english-school/index.js"></script>
   <link rel="stylesheet" crossorigin href="/goit-markup-english-school/assets/index-BGvWx_y4.css">
@@ -154,12 +155,12 @@
   <div class="container wider">
     <div class="hero-container">
 
-      <h1 class="hero-header">
+      <h1 class="hero-header" data-aos="fade-right">
         Discover the joy of learning
         <span class="hero-header-accent">English</span> with us!
       </h1>
 
-      <button class="btn hero-button" type="button" onclick="document.getElementById('hero-link').click();">
+      <button class="btn hero-button" type="button" onclick="document.getElementById('hero-link').click();" data-aos="fade-right" data-aos-delay="200">
         Leave an application
       </button>
 
@@ -178,29 +179,29 @@
 </section>
     <section id="about-us" class="about-us">
   <div class="container">
-    <h2>About <span class="title-subtext-background">Us</span></h2>
-    <p class="subtitle">
+    <h2  data-aos="fade-up">About <span class="title-subtext-background">Us</span></h2>
+    <p class="subtitle" data-aos="fade-up" data-aos-delay="200">
       We are dedicated to providing engaging and effective English language
       courses in a supportive and stimulating learning environment
     </p>
     <ol class="grid-container">
-      <li class="grid-item">
+      <li class="grid-item" data-aos="zoom-out-up" data-aos-delay="500">
         <p class="grid-item-num">01</p>
         <p class="grid-item-text">Expert, innovative teaching staff</p>
       </li>
-      <li class="grid-item">
+      <li class="grid-item" data-aos="zoom-out-up" data-aos-delay="500">
         <p class="grid-item-num">02</p>
         <p class="grid-item-text">Wide range of course levels and options</p>
       </li>
-      <li class="grid-item">
+      <li class="grid-item" data-aos="zoom-out-up">
         <p class="grid-item-num">03</p>
         <p class="grid-item-text">Multicultural learning environment</p>
       </li>
-      <li class="grid-item">
+      <li class="grid-item" data-aos="zoom-out-up">
         <p class="grid-item-num">04</p>
         <p class="grid-item-text">Comprehensive language support services</p>
       </li>
-      <li class="grid-item grid-item-img">
+      <li class="grid-item grid-item-img" data-aos="zoom-in-up" data-aos-delay="500">
         <img
           src="/goit-markup-english-school/assets/about-us_memoji@1x-DkiQ8z4G.png"
           alt=""
@@ -216,8 +217,8 @@
 
     <section id="our-lessons" class="ourlessons">
   <div class="ourlessons-container container">
-    <h2>Our <span class="title-subtext-background">lessons</span></h2>
-    <div class="ourlessons-subtitle-wrapper">
+    <h2  data-aos="fade-up">Our <span class="title-subtext-background">lessons</span></h2>
+    <div class="ourlessons-subtitle-wrapper" data-aos="fade-up" data-aos-delay="200">
       <p class="subtitle ourlessons-subtitle">
         Our lessons are carefully structured and interactive, designed to
         promote rapid language acquisition through practical tasks and
@@ -226,7 +227,7 @@
     </div>
 
     <ul class="ourlessons-list">
-      <li class="ourlessons-list-item">
+      <li class="ourlessons-list-item" data-aos="flip-left" data-aos-delay="400" data-aos-offset="200">
         <p class="ourlessons-list-item-header">Practice</p>
         <p class="ourlessons-list-item-price">40$ / month</p>
         <div class="ourlessons-desc-wrapper">
@@ -244,7 +245,7 @@
           Leave an application
         </button>
       </li>
-      <li class="ourlessons-list-item">
+      <li class="ourlessons-list-item" data-aos="flip-left" data-aos-delay="600" data-aos-offset="200">
         <p class="ourlessons-list-item-header">Standard</p>
         <p class="ourlessons-list-item-price">70$ / month</p>
         <div class="ourlessons-desc-wrapper">
@@ -262,7 +263,7 @@
           Leave an application
         </button>
       </li>
-      <li class="ourlessons-list-item">
+      <li class="ourlessons-list-item" data-aos="flip-left" data-aos-delay="800" data-aos-offset="200">
         <p class="ourlessons-list-item-header">Individual</p>
         <p class="ourlessons-list-item-price">99$ / month</p>
         <div class="ourlessons-desc-wrapper">
@@ -287,7 +288,7 @@
     <section class="english-package">
   <div class="english-package-container container wider" id="animation-block">
     <h2 class="visually-hidden">Advantages of learning English with us</h2>
-    <p class="english-package-heading">
+    <p class="english-package-heading" data-aos="zoom-in-up" data-aos-delay="200">
       Master the <span class="highlighted-text">Language</span> with Our English
       Package!
     </p>
@@ -295,18 +296,18 @@
       <div class="english-package-card">
         <h3 class="english-package-card-title">Power of English</h3>
         <ul class="english-package-benefits-list">
-          <li class="english-package-benefit-item">
+          <li class="english-package-benefit-item" data-aos="fade-right" data-aos-delay="400">
             Dive into captivating lessons designed to stimulate your curiosity.
           </li>
-          <li class="english-package-benefit-item">
+          <li class="english-package-benefit-item" data-aos="fade-right" data-aos-delay="600">
             Learn in a nurturing setting where every student's progress matters.
           </li>
-          <li class="english-package-benefit-item">
+          <li class="english-package-benefit-item" data-aos="fade-right" data-aos-delay="800">
             Experience the satisfaction of real progress as your language skills
             and confidence grow with every session.
           </li>
         </ul>
-        <button class="cta-button" type="button" onclick="document.getElementById('hero-link').click()">
+        <button class="cta-button" type="button" onclick="document.getElementById('hero-link').click()" data-aos="fade-right" data-aos-delay="1000">
           Leave an application
         </button>
       </div>
@@ -316,13 +317,13 @@
 
     <section id="our-teachers" class="our-teachers">
   <div class="container">
-    <h2>Meet our <span class="title-subtext-background">teachers</span></h2>
-    <p class="subtitle">
+    <h2 data-aos="fade-up">Meet our <span class="title-subtext-background">teachers</span></h2>
+    <p class="subtitle" data-aos="fade-up" data-aos-delay="200">
       Discover our team of dedicated educators, committed to guiding you on your
       journey to English proficiency with personalized and engaging instruction
     </p>
     <ul class="our-teachers-list">
-      <li class="our-teachers-card">
+      <li class="our-teachers-card" data-aos="fade-up-left" data-aos-delay="400">
         <img
           src="/goit-markup-english-school/assets/teacher_1@1x-D9rddbtv.jpg"
           srcset="/goit-markup-english-school/assets/teacher_1@1x-D9rddbtv.jpg 1x, /goit-markup-english-school/assets/teacher_1@2x-CaJxGD8C.jpg 2x"
@@ -337,7 +338,7 @@
           instruction, Maria brings warmth and patience to every class
         </p>
       </li>
-      <li class="our-teachers-card">
+      <li class="our-teachers-card" data-aos="fade-up-left" data-aos-delay="800">
         <img
           src="/goit-markup-english-school/assets/teacher_2@1x-BnqGuE8G.jpg"
           srcset="/goit-markup-english-school/assets/teacher_2@1x-BnqGuE8G.jpg 1x, /goit-markup-english-school/assets/teacher_2@2x-_aDYp6Fk.jpg 2x"
@@ -352,7 +353,7 @@
           learning, Artem excels in keeping students engaged and motivated
         </p>
       </li>
-      <li class="our-teachers-card">
+      <li class="our-teachers-card" data-aos="fade-up-right" data-aos-delay="1000">
         <img
           src="/goit-markup-english-school/assets/teacher_3@1x-CqX5OymT.jpg"
           srcset="/goit-markup-english-school/assets/teacher_3@1x-CqX5OymT.jpg 1x, /goit-markup-english-school/assets/teacher_3@2x-u0FGFmQM.jpg 2x"
@@ -368,7 +369,7 @@
           tasks
         </p>
       </li>
-      <li class="our-teachers-card">
+      <li class="our-teachers-card" data-aos="fade-up-right" data-aos-delay="600">
         <img
           src="/goit-markup-english-school/assets/teacher_4@1x-C6bgeMwq.jpg"
           srcset="/goit-markup-english-school/assets/teacher_4@1x-C6bgeMwq.jpg 1x, /goit-markup-english-school/assets/teacher_4@2x-CxY4irrj.jpg 2x"
@@ -391,8 +392,8 @@
     <section id="leave-an-application" class="leave-an-application">
   <div class="container">
     <div class="intro-wrapper">
-      <h2>Leave an <span class="title-subtext-background">application</span></h2>
-      <p class="subtitle">Please use the form below to contact us. Enter your name, email, and message and we'll get back to
+      <h2 data-aos="fade-up">Leave an <span class="title-subtext-background">application</span></h2>
+      <p class="subtitle" data-aos="fade-up" data-aos-delay="200">Please use the form below to contact us. Enter your name, email, and message and we'll get back to
         you shortly.</p>
     </div>
     <div class="section-items-wrapper">
@@ -405,7 +406,7 @@
              class="girl-learning">
         <div class="side-image-content">
           <h3 class="side-image-content-title">0</h3>
-          <p class="side-image-content-text">of our online English language lessons! This journey has been full of
+          <p class="side-image-content-text" data-aos="zoom-in">of our online English language lessons! This journey has been full of
             discovery, growth and unforgettable
             moments, and we are happy to share this joyful event with you.</p>
         </div>
@@ -490,13 +491,13 @@
     <section id="students-say" class="students-say">
   <div class="container">
     <div class="intro-wrapper">
-      <h2>What our <span class="title-subtext-background">students</span> say</h2>
-      <p class="subtitle"> Hear from our students about their learning journey with us, as they
+      <h2 data-aos="fade-up">What our <span class="title-subtext-background">students</span> say</h2>
+      <p class="subtitle" data-aos="fade-up" data-aos-delay="200"> Hear from our students about their learning journey with us, as they
         share their experiences, progress, and the transformative impact</p>
     </div>
     <div class="slider-container swiper">
       <ul class="students-list swiper-wrapper">
-        <li class="student swiper-slide">
+        <li class="student swiper-slide"  data-aos="flip-up" data-aos-delay="400">
           <div class="student-image-title">
             <img
               src="data:image/png;base64,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"
@@ -516,7 +517,7 @@
             stimulating. I feel more confident in my English skills.
           </p>
         </li>
-        <li class="student swiper-slide">
+        <li class="student swiper-slide"  data-aos="flip-up" data-aos-delay="600">
           <div class="student-image-title">
             <img
               src="data:image/png;base64,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"
@@ -536,7 +537,7 @@
             improve my weak areas.
           </p>
         </li>
-        <li class="student swiper-slide">
+        <li class="student swiper-slide"  data-aos="flip-up" data-aos-delay="800">
           <div class="student-image-title">
             <img
               src="data:image/png;base64,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"
@@ -619,6 +620,8 @@
 </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 </body>
 
 </html>
