@@ -23,6 +23,20 @@ textarea {
   padding: var(--indent-4) 18px;
 }
 
+input[type="text"]:not(:placeholder-shown):required:invalid,
+input[type="email"]:not(:placeholder-shown):required:invalid,
+input[type="tel"]:not(:placeholder-shown):required:invalid,
+textarea:not(:placeholder-shown):required:invalid {
+  border: 1px solid var(--cl-error);
+}
+
+input[type="text"]:not(:placeholder-shown):required:invalid + label,
+input[type="email"]:not(:placeholder-shown):required:invalid + label,
+input[type="tel"]:not(:placeholder-shown):required:invalid + label,
+textarea:not(:placeholder-shown):required:invalid + label {
+  color: var(--cl-error);
+}
+
 textarea {
   display: block;
   height: 104px;
@@ -66,23 +80,29 @@ textarea + label {
   pointer-events: none;
   position: absolute;
   top: 14px;
-  transition: transform .2s;
+  transition: color var(--base-transition), transform var(--base-transition);
 }
 
 input:focus,
 textarea:focus {
   border: 1px solid var(--cl-dark-green);
+  transition: border var(--base-transition);
 }
 
 input:not([type="checkbox"]):not([type="radio"]):focus + label,
 input:not([type="checkbox"]):not([type="radio"]):not(:placeholder-shown) + label {
   transform: translateY(calc(-50% - 14px)) translateX(calc(-50% + 14px)) scale(.9);
-  color: var(--cl-dark-green);
 }
 
 textarea:focus + label,
 textarea:not(:placeholder-shown) + label {
   transform: translateY(calc(-50% - 14px)) translateX(calc(-50% + 28px)) scale(.9);
+}
+
+input:not([type="checkbox"]):not([type="radio"]):focus + label,
+input:not([type="checkbox"]):not([type="radio"]):not(:placeholder-shown):focus:valid + label,
+textarea:focus + label,
+textarea:not(:placeholder-shown):focus:valid + label {
   color: var(--cl-dark-green);
 }
 

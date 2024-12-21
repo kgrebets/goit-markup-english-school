@@ -21,22 +21,22 @@
         </div>
       </div>
       <div class="form-section">
-        <form method="post" class="application-form" autocomplete="on">
+        <form method="post" class="application-form" autocomplete="on" id="application-form">
           <fieldset class="fieldset">
             <div class="form-group">
-              <input type="text" id="name" name="name" placeholder="Name">
+              <input type="text" id="name" name="name" placeholder="Name" required>
               <label for="name">Name</label>
             </div>
             <div class="form-group">
-              <input type="email" id="email" name="email" placeholder="Email">
+              <input type="email" id="email" name="email" placeholder="Email" required>
               <label for="email">Email</label>
             </div>
             <div class="form-group">
-              <input type="tel" id="phone" name="phone" placeholder="Phone">
+              <input type="tel" id="phone" name="phone" placeholder="Phone" required>
               <label for="phone">Phone</label>
             </div>
             <div class="form-group comment">
-              <textarea id="comment" name="comment" placeholder="Comment"></textarea>
+              <textarea id="comment" name="comment" placeholder="Comment" required></textarea>
               <label for="comment">Comment</label>
             </div>
             <div class="radio-group">
