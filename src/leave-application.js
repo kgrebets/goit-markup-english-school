@@ -1,4 +1,12 @@
+import Inputmask from 'inputmask';
 import animateTextCount from './animate-text-count.js';
+
+const form = document.getElementById('application-form');
+const input = document.querySelector("#phone");
+const inputs = document.querySelectorAll('input, textarea');
+
+
+Inputmask({"mask": "+380 (999) 999 9999"}).mask(input);
 
 const intersectionObserverCallback = (entries) => {
   entries.forEach((entry) => {
