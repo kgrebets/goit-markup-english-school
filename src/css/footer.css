@@ -176,9 +176,14 @@ footer .nav-menu {
     width: 42px;
     height: 42px;
   }
+
   .footer-social-icons-item-image {
     width: 22px;
     height: 22px;
+  }
+
+  .nav-menu {
+    align-items: flex-start;
   }
 }
 
